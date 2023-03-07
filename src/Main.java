@@ -6,50 +6,59 @@ import java.util.*;
 
 public class Main {
 
+    public static void main(String[] args) throws IOException{
+        //두 원이 접하는지, 겹치는지, 겹치지 않는지, 일치하는지 구하는 문제. how?
 
-    static int[][] map;
-    static boolean[] visited;
-    static int max;
+        /*
+        System.out.println(
+                Math.max(Math.pow(20000, 2), Integer.MAX_VALUE)
+        );*/
 
-    static int R, C;
-    static int[] dR = {-1, 1, 0, 0};
-    static int[] dC = {0, 0, -1, 1};
 
-    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        R = Integer.parseInt(st.nextToken());
-        C = Integer.parseInt(st.nextToken());
+        int T = Integer.parseInt(br.readLine());
+        StringTokenizer st;
+        for (int tc = 0; tc < T; tc++) {
+            st = new StringTokenizer(br.readLine());
+            int x1 = Integer.parseInt(st.nextToken());
+            int y1 = Integer.parseInt(st.nextToken());
+            int r1 = Integer.parseInt(st.nextToken());
+            int x2 = Integer.parseInt(st.nextToken());
+            int y2 = Integer.parseInt(st.nextToken());
+            int r2 = Integer.parseInt(st.nextToken());
 
-        map = new int[R][C];
-        max = 0;
+            //반례 1) 반지름이 0이면 점으로 존재한다.
+            if(x1 == x2 && y1 == y2 && r1 == r2){
+                if(r1==0) System.out.println(1);
+                else System.out.println(-1);
+                continue;
+            }else if(r1 == 0 && r2 == 0){
+                System.out.println(0);
+                continue;
+            }
+            //좌표가 같고 반지름이 같을 경우 -1을 출력하고 리턴한다.
 
-        for (int i = 0; i < R; i++) {
-            String line  = br.readLine();
-            for (int j = 0; j < C; j++) {
-                map[i][j] = line.charAt(j) - 65;
+            int dist = (int)Math.pow(x1 - x2, 2) + (int)Math.pow(y1 - y2, 2);
+            int rSum = (int)Math.pow(r1 + r2, 2);
+            int smallR = (int)Math.pow(Math.min(r1, r2),2);
+            int largeR = (int)Math.pow(Math.max(r1, r2),2);
+
+            if(smallR == 0){
+                //하나가 점인 경우
+                System.out.println(dist==largeR?1:0);
+            }else{
+                //둘 다 원일 때
+                //결과값 1인 경우
+                //직선 거리 = 반지름의 합 //직선 거리 = 작은 놈 반지름
+                if(dist == rSum || dist == smallR && smallR > 0 ) System.out.println(1);
+                else if(dist > rSum ||  dist < smallR) System.out.println(0);
+                else System.out.println(2);
+                //0인 경우
+                //직선 거리 > 반지름의 합
+                //또는
+                //작은 놈 반지름 > 직선 거리 차
+
             }
         }
-
-        visited = new boolean[26];
-
-        dfs(0, 0, 1);
-        System.out.println(max);
-
-    }
-
-    static void dfs(int r, int c, int cnt){
-        visited[map[r][c]] = true;
-        max = Math.max(cnt, max);
-
-        int nr, nc;
-        for (int dir = 0; dir < 4; dir++) {
-            nr = r + dR[dir];
-            nc = c + dC[dir];
-            if(nr < 0 || nc < 0 || nr >= R || nc >= C) continue;
-            if(!visited[map[nr][nc]])
-                dfs(nr, nc, cnt+1);
-        }
-        visited[map[r][c]] = false;
     }
 }
