@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 
-public class Main {
+public class Main_실패_turret {
 
     public static void main(String[] args) throws IOException{
         //두 원이 접하는지, 겹치는지, 겹치지 않는지, 일치하는지 구하는 문제. how?
