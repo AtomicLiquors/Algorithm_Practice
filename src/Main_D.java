@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_D {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -15,7 +15,7 @@ public class Main {
             if(N==1){
                 System.out.println("YES"); continue;
             }
-            int[] arr = new int[N];
+            long[] arr = new long[N];
             int cnt = 0;
 
 

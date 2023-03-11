@@ -1,4 +1,4 @@
-package taylor;
+package trigonometry;
 
 public class Taylor {
 
