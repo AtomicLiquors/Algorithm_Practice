@@ -10,7 +10,6 @@ public class Main_1463 {
         Queue<Node> q = new ArrayDeque<>();
 
         int value = Integer.parseInt(br.readLine());
-
         q.offer(new Node(value, 0));
         int cnt = 0;
         while (!q.isEmpty()){
