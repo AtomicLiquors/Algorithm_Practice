@@ -1,3 +1,5 @@
+package tree.example;
+
 public class CompleteBinaryTreeTest {
     public static void main(String[] args) {
         int size = 9;
