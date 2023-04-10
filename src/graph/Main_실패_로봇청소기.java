@@ -1,10 +1,13 @@
 package graph;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
+//반례
+//https://www.acmicpc.net/board/view/72795
 public class Main_실패_로봇청소기 {
     //14503_로봇청소기
 
@@ -13,11 +16,10 @@ public class Main_실패_로봇청소기 {
     static int nr, nc, nd;
 
     static int[] dR = {-1, 0, 1, 0};
-    static int[] dC = {0, 1, 0, -1};
+    static int[] dC = {0, -1, 0, 1};
 
     static boolean terminate = false;
 
-    //static int cnt = 1;
     static int cnt = 0;
     static int[][] map;
     public static void main(String[] args) throws IOException {
@@ -51,35 +53,31 @@ public class Main_실패_로봇청소기 {
     static void dfs(int r, int c, int d){
 
         if(map[r][c]==0){
-            //cnt++;
+            cnt++;
             map[r][c] = 2;
         }
 
         for (int dir = 1; dir <= 4; dir++) {
-             nd = (d + dir)%4;
-             nr = r + dR[nd];
-             nc = c + dC[nd];
+            nd = (d + dir)%4;
+            nr = r + dR[nd];
+            nc = c + dC[nd];
 
-             if(nr < 0 || nc < 0 || nr >= N || nc >= M)continue;
-             if(map[nr][nc]==0){
-                 cnt++;
-                 dfs(nr, nc, nd);
-                 //if(terminate) return;
-                 return;
-             }
+            //if(nr < 0 || nc < 0 || nr >= N || nc >= M)continue;
+            if(map[nr][nc]==0){
+                dfs(nr, nc, nd);
+                //if(terminate) return;
+                return;
+            }
         }
-        int back = (d+2)%4;
-        //nr = r - dR[d];
-        //nc = c - dC[d];
-        nr = r + dR[back];
-        nc = c + dC[back];
-
-        if(nr < 0 || nc < 0 || nr >= N || nc >= M) return;
+        nr = r - dR[d];
+        nc = c - dC[d];
+        //if(nr < 0 || nc < 0 || nr >= N || nc >= M) return;
         if(map[nr][nc]==1 ){
-            //terminate = true;
+            terminate = true;
             return;
         }
         dfs(nr, nc, d);
+        if(terminate) return;
     }
 
 }
