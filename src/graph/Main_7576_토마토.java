@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_토마토 {
+public class Main_7576_토마토 {
 
     static int M, N, map[][];
     static Queue<int[]> q = new ArrayDeque<>();
@@ -33,7 +33,9 @@ public class Main_토마토 {
             for (int j = 0; j < M; j++) {
                 map[i][j] = Integer.parseInt(st.nextToken());
                 if(map[i][j]==1) q.offer(new int[]{i, j, 0});
+                //System.out.print(map[i][j]);
             }
+            System.out.println();
         }
 
         bfs();
