@@ -1,3 +1,5 @@
+package combinatorics;
+
 import java.util.Scanner;
 
 public class NPCombPractice {
