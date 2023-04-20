@@ -1,3 +1,5 @@
+package combinatorics;
+
 import java.util.Arrays;
 
 public class Permutation {

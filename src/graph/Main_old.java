@@ -4,14 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_Centauri {
+public class Main_old {
 
     static int goal;
-    static int[] visited;
+    static boolean[] visited;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
@@ -22,51 +21,43 @@ public class Main_Centauri {
             int start = Integer.parseInt(st.nextToken());
 
             goal = Integer.parseInt(st.nextToken()) - 1;
-            visited = new int[goal+1];
+            visited = new boolean[goal+1];
 
-            bfs(start, 0);
+            bfs(start, 0, 0);
 
         }
     }
 
-    static void bfs(int pos, int dist){
+    static void bfs(int pos, int dist, int cnt){
 
         Queue<int[]> q = new ArrayDeque<>();
-        visited[dist] = 1;
-        q.offer(new int[]{pos, dist});
+        visited[dist] = true;
+        q.offer(new int[]{pos, dist, cnt});
         int nextPos, nextDist;
         while (!q.isEmpty()){
             int[] curr = q.poll();
-            System.out.println(Arrays.toString(visited));
+            visited[curr[0]] = true;
+
+            curr[2]++;
+
             if(curr[0]==goal){
-                System.out.println(visited[curr[0]]-1);
+                System.out.println(curr[2]);
                 return;
             }
 
             nextDist = curr[1] + 1;
             nextPos = curr[0] + nextDist;
-            //System.out.println(nextPos);
-            //System.out.println(nextDist);
 
-            if(nextPos <= goal && visited[nextPos] == 0){
-                q.offer(new int[]{nextPos, nextDist});
-                visited[nextPos] = visited[curr[0]] + 1;
-            }
-
-
+            if(nextPos <= goal && !visited[nextPos])
+                q.offer(new int[]{nextPos, nextDist, curr[2]});
             nextPos--;
             nextDist--;
-            if(nextPos <= goal && nextDist > 0 && visited[nextPos] == 0){
-                q.offer(new int[]{nextPos, nextDist});
-                visited[nextPos] = visited[curr[0]] + 1;
-            }
-
+            if(nextPos <= goal && nextDist > 0 && !visited[nextPos])
+                q.offer(new int[]{nextPos, nextDist, curr[2]});
             nextPos--;
             nextDist--;
-            if(nextPos <= goal && nextDist > 0 && visited[nextPos] == 0){
-                q.offer(new int[]{nextPos, nextDist});
-                visited[nextPos] = visited[curr[0]] + 1;
-            }
+            if(nextPos <= goal && nextDist > 0 && !visited[nextPos])
+                q.offer(new int[]{nextPos, nextDist, curr[2]});
         }
     }
 }

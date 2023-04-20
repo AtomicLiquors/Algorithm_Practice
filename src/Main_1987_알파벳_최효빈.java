@@ -1,4 +1,3 @@
-import sun.lwawt.macosx.CSystemTray;
 
 import java.io.BufferedReader;
 import java.io.IOException;
