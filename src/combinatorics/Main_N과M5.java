@@ -41,7 +41,7 @@ public class Main_N과M5 {
         }
 
         for (int i = 0; i < N; i++) {
-            if((flag & (1<<i)) != 0) continue;
+            //if((flag & (1<<i)) != 0) continue;
             numbers[cnt] = input[i];
             perm(cnt+1, (flag | 1<<i));
         }
