@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main_1929_제출대기 {
+public class Main_1929 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int M = sc.nextInt();
