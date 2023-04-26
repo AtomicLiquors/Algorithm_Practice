@@ -1,4 +1,4 @@
-
+package Algorithm_Practice.DP;
 
 import java.util.Scanner;
 
