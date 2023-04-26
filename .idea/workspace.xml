@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47251abc-8f1f-449f-8495-9cea58e371c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main_10816_숫자카드2.java" afterDir="false" />
+    <list default="true" id="e61dc2f1-6a6e-42ae-9ddd-d435fc10e841" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Main_리모컨.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/Main_RGB거리.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +25,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O8r0YDV01usKe8Rpkbnt02onrZ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -45,29 +46,16 @@
       <recent name="graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main_10816_숫자카드2">
+  <component name="RunManager" selected="애플리케이션.Main_RGB거리">
+    <configuration name="Main_리모컨" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_리모컨" />
+      <module name="Algorithm_Practice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main_10816_숫자카드2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main_10816_숫자카드2" />
-      <module name="Algorithm_Practice" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_1181_단어정렬" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_1181_단어정렬" />
-      <module name="Algorithm_Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_1629_곱셈_실패" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_1629_곱셈_실패" />
       <module name="Algorithm_Practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,25 +81,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main_RGB거리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.Main_RGB거리" />
+      <module name="Algorithm_Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main_10816_숫자카드2" />
-        <item itemvalue="Application.Main_9375" />
-        <item itemvalue="Application.Main_1929_제출대기" />
-        <item itemvalue="Application.Main_1181_단어정렬" />
-        <item itemvalue="Application.Main_1629_곱셈_실패" />
+        <item itemvalue="애플리케이션.Main_RGB거리" />
+        <item itemvalue="애플리케이션.Main_리모컨" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="47251abc-8f1f-449f-8495-9cea58e371c2" name="Changes" comment="" />
+      <changelist id="e61dc2f1-6a6e-42ae-9ddd-d435fc10e841" name="변경" comment="" />
       <created>1680952827530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680952827530</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
