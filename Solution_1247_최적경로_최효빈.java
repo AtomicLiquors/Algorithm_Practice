@@ -1,3 +1,5 @@
+package Algorithm_Practice;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -1,4 +1,4 @@
-package samsung01;
+package Algorithm_Practice.samsung01;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -1,3 +1,5 @@
+package Algorithm_Practice;
+
 import java.io.*;
 
 import java.util.*;

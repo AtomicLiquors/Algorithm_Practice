@@ -1,4 +1,4 @@
-package binarysearch.example;
+package  Algorithm_Practice.binarysearch.example;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 
 public class Main_1920_수찾기 {
-//	직접 구현시 1212ms, API이용시(Arrays.binarySearch) 620ms + 메모리 10000kb 절감
+    //	직접 구현시 1212ms, API이용시(Arrays.binarySearch) 620ms + 메모리 10000kb 절감
     static int[] arr;
 
     public static void main(String[] args) throws IOException {

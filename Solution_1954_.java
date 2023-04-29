@@ -1,3 +1,5 @@
+package Algorithm_Practice;
+
 import java.io.*;
 
 public class Solution_1954_ {
