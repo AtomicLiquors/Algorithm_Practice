@@ -1,4 +1,4 @@
-package samsung01;
+package disjointset;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main_ÁıÇÕÀÇÇ¥Çö {
+public class Main_ì§‘í•©ì˜í‘œí˜„ {
 	
 	static int N, M;
 	static int[] parents;

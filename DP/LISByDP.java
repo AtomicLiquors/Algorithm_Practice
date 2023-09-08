@@ -1,3 +1,4 @@
+package DP;
 
 import java.util.Scanner;
 
@@ -26,3 +27,4 @@ public class LISByDP {
 		}
 		System.out.println(max);
 	}
+}
