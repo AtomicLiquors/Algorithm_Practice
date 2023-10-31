@@ -1,0 +1,7 @@
+/.idea
+out
+out/*
+/out
+/out/*
+*.iml
+Algorithm_Practice.iml
