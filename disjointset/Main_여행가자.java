@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.util.StringTokenizer;
 
-public class Main_¿©Çà°¡ÀÚ {
+public class Main_ì—¬í–‰ê°€ì {
 	
 	static int[] parents;
 	
