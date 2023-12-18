@@ -24,7 +24,7 @@ function solution(a, b) {
 }
 
 
-/* 모범답안
+/* 모범답안.
 function solution(a, b) {
     let n = 1;
     for (let i = 1; i <= Math.min(a,b); i++) {
