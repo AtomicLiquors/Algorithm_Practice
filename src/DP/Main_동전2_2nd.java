@@ -1,4 +1,4 @@
-package Algorithm_Practice.DP;
+package DP;
 
 
 import java.io.BufferedReader;
@@ -47,12 +47,9 @@ public class Main_동전2_2nd {
 				D[n] = 1;
 				return;
 			}else if(n < input[i]){
-				D[n] = 100001;
+				continue;
 			}else{
-				dp(input[i]);
-				dp(n-input[i]);
-
-				D[n] = (D[n]>0?Math.min(D[input[i]] + D[n-input[i]], D[n]):D[input[i]] + D[n-input[i]]);
+				D[n] = Math.min(D[input[i]] + D[n-input[i]], D[n]);
 			}
 		}
 	}
