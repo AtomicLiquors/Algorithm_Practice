@@ -5,42 +5,39 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+// 시간 초과
 public class Main_9372 {
-    static int sum;
-    static int targetSum;
-    static int[] adjCities, visitCount;
-    static int answer;
 
+    static int N, M, parents[];
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
+        Queue<int[]> q;
         int T = Integer.parseInt(br.readLine());
-
         for (int tc = 0; tc < T; tc++) {
-            sum = 0;
-            targetSum = 0;
-            answer = Integer.MAX_VALUE;
             st = new StringTokenizer(br.readLine());
-            int N = Integer.parseInt(st.nextToken());
-            int M = Integer.parseInt(st.nextToken());
-            ArrayList<Integer>[] graph = new ArrayList[N+1];
-            adjCities = new int[N+1];
-            visitCount = new int[N+1];
-            int count = 0;
-
+            N = Integer.parseInt(st.nextToken());
+            M = Integer.parseInt(st.nextToken());
+            parents = new int[N+1];
+            q = new ArrayDeque<>();
             int a;
             int b;
 
-            targetSum = (N * (N + 1) ) / 2;
+            makeSet();
 
             for (int i = 0; i < M; i++) {
                st = new StringTokenizer(br.readLine());
                a = Integer.parseInt(st.nextToken());
                b = Integer.parseInt(st.nextToken());
-               graph[a].add(b);
-               graph[b].add(a);
-               adjCities[a]++;
-               adjCities[b]++;
+               q.offer(new int[]{a, b});
+            }
+
+            int answer = 0;
+
+            while(!q.isEmpty()){
+                int[] curr = q.poll();
+                if(union(curr[0], curr[1]))
+                    answer++;
             }
 
 
@@ -50,16 +47,26 @@ public class Main_9372 {
         br.close();
     }
 
-    static void backtrack(int city){
-
-        if(visitCount[city] == 0) sum++;
-        visitCount[city]++;
-
-        for (int i = 0; i < adjCities[i]; i++) {
-
+    static void makeSet(){
+        for (int i = 1; i <= N; i++) {
+            parents[i] = i;
         }
-        visitCount[city]--;
-        if(visitCount[city] == 0) sum--;
+    }
 
+    static boolean union(int a, int b) {
+        int aRoot = findSet(a);
+        int bRoot = findSet(b);
+        if(aRoot == bRoot)
+            return false;
+        else{
+            parents[aRoot] = bRoot;
+            return true;
+        }
+    }
+
+    static int findSet(int i) {
+        if(parents[i] == i)
+            return i;
+        return parents[i] = findSet(parents[i]);
     }
 }
