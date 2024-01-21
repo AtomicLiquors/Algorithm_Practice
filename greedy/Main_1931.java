@@ -44,37 +44,25 @@ public class Main_1931 {
             eq.offer(new Meeting(start, end));
         }
 
-        occupied = new boolean[maxEnd + 2];
-
+        int left = 0;
+        int right = 0;
         int answer = 0;
 
         while (!eq.isEmpty()){
             Meeting m = eq.poll();
-            if(!isOccupied(m.start, m.end)){
+            if(m.start == m.end){
                 answer++;
-                if(m.start != m.end){
-                    currEnd = Math.max(m.start, currEnd);
+                right = m.end;
+            }else{
+                if(m.end == right && m.start >= left){
+                    answer++;
+                    left = right = m.end;
+                }else if(m.end > right && m.start >= right){
+                    answer++;
+                    left = right = m.end;
                 }
             }
         }
         System.out.println(answer);
-    }
-
-    static boolean isOccupied(int start, int end){
-        for (int i = start; i <= end; i++) {
-            if(occupied[i]) {
-                if(i == start && !occupied[i+1]){
-                    continue;
-                }else if(i == end && !occupied[i-1]){
-                    continue;
-                }else{
-                    return true;
-                }
-            }
-        }
-        for (int i = start; i <= end; i++) {
-            occupied[i] = true;
-        }
-        return false;
     }
 }
