@@ -15,10 +15,10 @@ public class Main_2448 {
 
         que.offer(N);
 
+        boolean[] mark = new boolean[6145];
         int start = N;
         int end = N;
-        for (int i = 0; i < N; i+=3) {
-
+        for (int i = 0; i < N/3; i++) {
             for (int j = 1; j <= end; j++) {
                 if(j == que.peekFirst()){
                     sb.append('*');
@@ -49,14 +49,14 @@ public class Main_2448 {
             end++;
 
             for (int j = 1; j <= end; j++) {
-                if(j == start)
-                    que.offer(j-1);
                 if(j == que.peekFirst()){
+                    if(i % 2 == 0 || j == start)
+                        que.offer(j-1);
                     if(j != N)
                     sb.append("*****");
                     que.poll();
                     j += 4;
-                    if(j != N)
+                    if(i % 2 == 0 || j == end)
                         que.offer(j+1);
                 }else{
                     sb.append(' ');
