@@ -15,4 +15,7 @@ public class Main_3052 {
 
         System.out.println(answer);
     }
+
+    public static class Example {
+    }
 }
