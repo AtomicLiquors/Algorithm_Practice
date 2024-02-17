@@ -1,4 +1,3 @@
-
 package graph.adjacency;
 
 import java.io.BufferedReader;
@@ -7,13 +6,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-class Edge2 {
+class Edge {
     int start;
     int end;
     int value;
     int idx;
 
-    Edge2(int start, int end, int value, int idx) {
+    Edge(int start, int end, int value, int idx) {
         this.start = start;
         this.end = end;
         this.value = value;
@@ -21,18 +20,19 @@ class Edge2 {
     }
 }
 
-public class Main_1865 {
+public class Main_1865_2 {
 
-    static ArrayList<Edge2> edge2s;
-    static boolean[] visited;
-    static ArrayList<Edge2>[] edgesPerPoint;
+    static int N;
+    static ArrayList<Edge> edges;
+    static ArrayList<Edge>[] edgesPerPoint;
     static int[] edgeCountPerPoint;
     static int edgeIdx;
     static int startPoint ,totalEdges;
     static boolean answer;
 
+    static int[] parents;
+
     public static void main(String[] args) throws IOException {
-// visited 외에 사이클링 체크.
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int TC = Integer.parseInt(br.readLine());
@@ -44,12 +44,11 @@ public class Main_1865 {
             int N = Integer.parseInt(st.nextToken());
             int M = Integer.parseInt(st.nextToken());
             int W = Integer.parseInt(st.nextToken());
-            totalEdges = 2 * M + W;
-            edge2s = new ArrayList<>();
-            edgesPerPoint = new ArrayList[N+1];
-            edgeCountPerPoint = new int[N+1];
-            edgeIdx = 0;
-            Edge2 edge2;
+
+            parents = new int[N+1];
+            edges = new ArrayList<>();
+            makeSet();
+
             for (int i = 0; i < M + W; i++) {
                 st = new StringTokenizer(br.readLine());
                 int S = Integer.parseInt(st.nextToken());
@@ -57,20 +56,21 @@ public class Main_1865 {
                 int T = Integer.parseInt(st.nextToken());
                 if(i >= M) T = -T;
 
+
                 if(edgesPerPoint[S] == null)
                     edgesPerPoint[S] = new ArrayList<>();
-                edge2 = new Edge2(S, E, T, edgeIdx);
-                edge2s.add(edge2);
-                edgesPerPoint[S].add(edge2);
+                Edge edge = new Edge(S, E, T, edgeIdx);
+                edges.add(edge);
+                edgesPerPoint[S].add(edge);
                 edgeCountPerPoint[S]++;
                 edgeIdx++;
 
                 if(i < M){
-                    edge2 = new Edge2(E, S, T, edgeIdx);
-                    edge2s.add(edge2);
+                    edge = new Edge(E, S, T, edgeIdx);
+                    edges.add(edge);
                     if(edgesPerPoint[E] == null)
                         edgesPerPoint[E] = new ArrayList<>();
-                    edgesPerPoint[E].add(edge2);
+                    edgesPerPoint[E].add(edge);
                     edgeCountPerPoint[E]++;
                     edgeIdx++;
                 }
@@ -79,9 +79,11 @@ public class Main_1865 {
 
             answer = false;
             for (int i = 1; i <= N; i++) {
-                visited = new boolean[totalEdges];
                 startPoint = i;
-                travel(i, 0, 0);
+                // 점마다 돌면서
+                // 시작, 끝이 같은 집합인 놈이 나왔다면? 사이클을 찾은 것. -> 사이클 합이 음수가 되는지 확인해라.
+                // 확인하고 나서 방문처리는 어떻게 할래?
+
                 if(answer) break;
             }
 
@@ -89,19 +91,29 @@ public class Main_1865 {
         }
     }
 
-    static void travel(int curr, int cnt, long sum){
-        if(cnt > 2 * totalEdges)
-            return;
-        if( cnt > 0 && curr == startPoint){
-            answer = sum < 0;
+    static void makeSet(){
+        for (int i = 1; i <= N; i++) {
+            parents[i] = i;
         }
+    }
 
-        for (int i = 0; i < edgeCountPerPoint[curr]; i++) {
-            Edge2 edge2 = edgesPerPoint[curr].get(i);
-            if(!visited[edge2.idx]){
-                visited[edge2.idx] = true;travel(edge2.end, cnt + 1, sum + edge2.value);
-                visited[edge2.idx] = false;
-            }
-        }
+    static boolean union(int a, int b){
+        int aRoot = findSet(a);
+        int bRoot = findSet(b);
+
+        if(aRoot == bRoot) return false;
+
+        parents[aRoot] = bRoot;
+        return true;
+    }
+
+    static int findSet(int a){
+        if(parents[a] == a)
+            return a;
+        return parents[a] = findSet(parents[a]);
+    }
+
+    static void traverse(){
+
     }
 }
