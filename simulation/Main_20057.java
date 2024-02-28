@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Main_20057 {
     static int N;
@@ -19,9 +20,16 @@ public class Main_20057 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(br.readLine());
+        N = Integer.parseInt(br.readLine());
+
 
         map = new int[N][N];
+        for (int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < N; j++) {
+                map[i][j] = Integer.parseInt(st.nextToken());
+            }
+        }
 
         int dir = 0;
         int r = N/2;
@@ -47,7 +55,6 @@ public class Main_20057 {
             }
         }
 
-        System.out.println(Arrays.deepToString(map));
         System.out.println(answer);
     }
 
@@ -58,8 +65,8 @@ public class Main_20057 {
         int[] sides = new int[]{0, 0};
         for (int i = 0; i < 5; i++){
             // 위치를 찍는다.
-            int pointR = sr + dir * straightOffset[i];
-            int pointC = sc + dir * straightOffset[i];
+            int pointR = sr + dR[dir] * straightOffset[i];
+            int pointC = sc + dC[dir] * straightOffset[i];
             int amount = (totalSand * ratios[i]) / 100;
 
             if(i==0){
@@ -75,8 +82,8 @@ public class Main_20057 {
 
             for (int j = 0; j < 2; j++) {
                 // 위치를 찍는다.
-                int targetR = pointR + sides[j] * acrossOffset[i];
-                int targetC = pointC + sides[j] * acrossOffset[i];
+                int targetR = pointR + dR[sides[j]] * acrossOffset[i];
+                int targetC = pointC + dC[sides[j]] * acrossOffset[i];
 
                 map[sr][sc] -= amount;
                 totalScatteredSand += amount;
@@ -85,8 +92,9 @@ public class Main_20057 {
         }
 
         //알파를 더한다.
-        int alphaR = sr + dir;
-        int alphaC = sc + dir;
+        int alphaR = sr + dR[dir];
+        int alphaC = sc + dC[dir];
+        map[sr][sc] = 0;
         moveSand(alphaR, alphaC, totalSand - totalScatteredSand);
     }
 
