@@ -8,10 +8,9 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Main_20303_Union {
+
+    // 	564676KB / 716ms
     static int[] roots, candies, friends;
-
-    // 정수 오버플로우는 날 수가 없다 : 애들이 총 30000명, 사탕 수가 인당 10000개니까 30000 * 10000 = 사탕을 다 뺏어도 3억개가 맥시멈이다.
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -32,12 +31,17 @@ public class Main_20303_Union {
             friends[i] = 1;
         }
 
+
         for (int i = 1; i <= M; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
 
             union(a, b);
+        }
+
+        for (int i = 1; i <= N; i++) {
+            findSet(i);
         }
 
         boolean[] visited = new boolean[N+1];
@@ -60,15 +64,15 @@ public class Main_20303_Union {
         }
 
         int[][] DP = new int[listsSize+1][K];
-        int answer = 0;
         for (int i = 1; i <= listsSize; i++) {
-            for (int j = friendSumList.get(i); j < K; j++) {
-                DP[i][j] = Math.max(DP[i-1][j], DP[i-1][j - friendSumList.get(i)] + candySumList.get(i));
-                answer = Math.max(DP[i][j], answer);
+            for (int j = 1; j < K; j++) {
+                if(j >= friendSumList.get(i))
+                    DP[i][j] = Math.max(DP[i-1][j], DP[i-1][j - friendSumList.get(i)] + candySumList.get(i));
+                else
+                    DP[i][j] = DP[i-1][j];
             }
-            // 모든 경우에 대해 조회하는 게 맞나? 더하지 말아야 할 조합을 더하지는 않는가?
         }
-        System.out.println(answer);
+        System.out.println(DP[listsSize][K-1]);
     }
 
     static int findSet(int a){
