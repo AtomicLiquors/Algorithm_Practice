@@ -1,3 +1,5 @@
+// 20112KB	184ms
+
 package simulation;
 
 import java.io.BufferedReader;
