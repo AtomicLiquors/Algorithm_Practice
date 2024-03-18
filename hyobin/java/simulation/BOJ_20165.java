@@ -1,4 +1,4 @@
-// 20112KB	184ms
+
 
 package simulation;
 
@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Main_20165 {
 
     static int N, M;
-
+    // 20112KB	184ms
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
