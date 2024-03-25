@@ -24,8 +24,20 @@ public class Main_10942 {
 
         for (int i = 1; i < size; i++) {
             DP[i][i] = true;
-            palindrome(i, i+1);
-            palindrome(i-1, i+1);
+
+            for(int L = i-1, R = i+1; L >= 1 && R < size; L--, R++){
+                if(arr[L] == arr[R])
+                    DP[L][R] = true;
+                else
+                    break;
+            }
+
+            for(int L = i-1, R = i; L >= 1 && R < size; L--, R++){
+                if(arr[L] == arr[R])
+                    DP[L][R] = true;
+                else
+                    break;
+            }
         }
 
         int M = Integer.parseInt(br.readLine());
@@ -37,16 +49,8 @@ public class Main_10942 {
             int right = Integer.parseInt(st.nextToken());
             sb.append(DP[left][right] ? 1 : 0).append("\n");
         }
-        System.out.println(sb);
+        System.out.print(sb);
 
         br.close();
-    }
-
-    static void palindrome(int left, int right){
-        if(left < 1 || right >= size) return;
-        if(arr[left] == arr[right]) {
-            DP[left][right] = true;
-            palindrome(left-1, right+1);
-        }
     }
 }
