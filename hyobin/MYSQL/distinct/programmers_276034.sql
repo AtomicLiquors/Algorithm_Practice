@@ -12,3 +12,5 @@ WHERE
     SKILL_CODE & S.CODE
 ORDER BY 
     ID
+// DISTINCT 키워드를 적용하지 않아 "테스트 케이스는 맞췄지만 제출하면 실패했다."
+// Python도, C# 스킬도 갖고 있을 때 레코드가 여러 개 조회되었기 때문이다.
