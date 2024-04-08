@@ -6,19 +6,19 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-class Edge implements Comparable<Edge> {
+class Edge1922 implements Comparable<Edge1922> {
     int a;
     int b;
     int cost;
 
-    public Edge(int a, int b, int cost){
+    public Edge1922(int a, int b, int cost){
         this.a = a;
         this.b = b;
         this.cost = cost;
     }
 
     @Override
-    public int compareTo(Edge e) {
+    public int compareTo(Edge1922 e) {
         return this.cost - e.cost;
     }
 }
@@ -26,7 +26,7 @@ class Edge implements Comparable<Edge> {
 public class Main_1922 {
 
     static int N, M, parents[], costs[][];
-    static Edge[] edgeList;
+    static Edge1922[] edgeList;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,7 +38,7 @@ public class Main_1922 {
             parents[i] = i;
         }
 
-        edgeList = new Edge[M];
+        edgeList = new Edge1922[M];
 
         // 비용 정보 저장
         StringTokenizer st;
@@ -47,14 +47,14 @@ public class Main_1922 {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             int cost = Integer.parseInt(st.nextToken());
-            edgeList[i] = new Edge(a, b, cost);
+            edgeList[i] = new Edge1922(a, b, cost);
         }
 
         Arrays.sort(edgeList);
 
         int result = 0, count = 0;
 
-        for (Edge edge : edgeList) {
+        for (Edge1922 edge : edgeList) {
             if(union(edge.a, edge.b)){
                 result += edge.cost;
                 if(++count == N-1) break;
