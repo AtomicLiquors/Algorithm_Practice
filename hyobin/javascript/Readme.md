@@ -1,3 +1,7 @@
+### ⚠️ 실제 코드는 인라인으로 작성하지 말 것! ⚠️ 
+프로그래머스 추천 답안은 JS 내장 메서드의 응용 감각을 기르는 것뿐,
+성능이나 유지보수성 면에서 권장할 코드가 아니다.
+
 ### 정렬
 - [.sort()로 숫자 정렬](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/sort/Programmers_42576.js)
 - [두 개의 정렬 조건식](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/sort/programmers_120880.js)
