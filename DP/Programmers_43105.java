@@ -27,7 +27,7 @@ public class Programmers_43105 {
 
 /*
 import java.util.*;
-class Solution {
+class Z_ETC.Solution {
     public int solution(int[][] triangle) {
         for (int i = 1; i < triangle.length; i++) {
             triangle[i][0] += triangle[i-1][0];
