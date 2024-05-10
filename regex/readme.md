@@ -4,6 +4,8 @@ Python은 raw string을 지원해 대표 문자1를 표현할 때 역슬래시 \
 Pattern pattern = Pattern.compile("\\d");
 Matcher matcher = pattern.matcher(searchTarget);
 ```
+
+- ['하나 이상'의 유무에 주의하기](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_9996.java)
   
   
 
