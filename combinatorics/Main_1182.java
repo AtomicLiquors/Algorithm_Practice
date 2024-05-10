@@ -26,13 +26,13 @@ public class Main_1182 {
             array[i] = Integer.parseInt(st.nextToken());
         }
 
-        subset(0, 0);
+        subset(0);
 
         System.out.println(answer);
     }
 
-    static void subset(int idx, int cnt){
-        if(cnt == N){
+    static void subset(int idx){
+        if(idx == N){
             int sum = 0;
             boolean flag = false;
             for (int i = 0; i < N; i++) {
@@ -46,8 +46,8 @@ public class Main_1182 {
         }
 
         isSelected[idx] = true;
-        subset(idx+1, cnt+1);
+        subset(idx+1);
         isSelected[idx] = false;
-        subset(idx+1, cnt+1);
+        subset(idx+1);
     }
 }
