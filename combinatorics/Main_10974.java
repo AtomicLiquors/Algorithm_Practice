@@ -33,13 +33,9 @@ public class Main_10974 {
         }
 
         for (int i = 1; i <= N; i++) {
-            if(selected[i])
-                continue;
 
             numbers[cnt] = i;
-            selected[i] = true;
             perm(cnt+1);
-            selected[i] = false;
         }
     }
 }
