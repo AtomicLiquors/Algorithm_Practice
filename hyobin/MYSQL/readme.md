@@ -8,6 +8,9 @@
 ### CASE WHEN 사용법
 - [programmers_164672](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/tree/main/hyobin/MYSQL/string)
 
+### DISTINCT 사용 예시
+- []()
+
 ### 문자열
 - [일반 문자열 와일드카드](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/MYSQL/string/programmers_157343.sql)
 
