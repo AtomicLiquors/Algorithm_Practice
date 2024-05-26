@@ -11,3 +11,6 @@
 - [ ]  **왜 틀렸는가? 무슨 실수를 했나?**
 - [ ]  문제에서 간과한 점은? (출력 문제, 데이터 크기, 제약조건 등등)
 - [ ]  풀이한 원본 명시
+
+
+- [매개변수 전달이 아닌, 3차원 DP 테이블 선언](https://github.com/TPA-ThreeProblemsAday/TPA_KBK/blob/main/BOJ/dp/BOJ14722.java)
