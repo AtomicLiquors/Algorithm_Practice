@@ -15,3 +15,6 @@
 ### 정규 표현식
 - [정규 표현식 와일드카드](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/MYSQL/string/regex/programmers_59045.sql)
 - [원본 문자열 그룹으로 분류해서 순번 지정하기](https://github.com/AtomicLiquors/TPA_CHB/blob/main/hyobin/MYSQL/string/regex/programmers_164670.sql)
+
+### GROUP BY
+- [문자열 일부로 그룹화](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/MYSQL/group/programmers_131529.sql)
