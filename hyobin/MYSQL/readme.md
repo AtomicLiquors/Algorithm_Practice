@@ -18,3 +18,6 @@
 
 ### GROUP BY
 - [문자열 일부로 그룹화](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/MYSQL/group/programmers_131529.sql)
+  
+### JOIN
+- [JOIN 키워드 쓰지 않고 JOIN하는 경우 - 추가바람]
