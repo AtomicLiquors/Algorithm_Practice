@@ -6,7 +6,7 @@ Matcher matcher = pattern.matcher(searchTarget);
 ```
 
 - ['하나 이상'의 유무에 주의하기](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_9996.java)
-  
+- [문자열 반복 : 똑같은 문자, 또는 같은 그룹에 속하는 문자](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_4659.java)
   
 
 ### 전화번호 찾기
