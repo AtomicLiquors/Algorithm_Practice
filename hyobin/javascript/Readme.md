@@ -12,3 +12,13 @@
 
 ### 아스키 코드
 - [문자에서 아스키 코드 구하기, 문자로 되돌리기](https://github.com/AtomicLiquors/TPA_CHB/blob/main/hyobin/javascript/string/programmers_155652.js)
+
+### for
+- for… in의 각 항목은 숫자 인덱스가 아니라 문자열이다.  
+  DP를 for in으로 풀었는데   
+  idx+1이 1 + 1 = 2가 아니라 1 + “1” = 11이 되었다.  
+  그래서 DP 테이블이 1부터 채워지지 않고 1, 11, 21... 처럼 채워지는 바람에 아래 꼴이 났다.
+  ```
+  [[7],[10,0],[18,1,0,null,null,null,null,null,null,null,null,1],[20,8,4,0,null,null,null,null,null,null,null,8,null,null,null,null,null,null,null,null,null,4],[24,13,6,6,0,null,null,null,null,null,null,13,null,null,null,null,null,null,null,null,null,6,null,null,null,null,null,null,null,null,null,6]]
+  ```
+
