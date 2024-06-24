@@ -64,3 +64,17 @@ function Id(input){
 
 // 체이닝 메서드를 사용한 이유 : 단위 테스트가 편하다. 가독성이 좋다.
 // 개선점 : this.id의 불필요한 반복을 줄일 수 없을까.
+
+
+/* 모범답안*/
+function solution(new_id) {
+    const answer = new_id
+        .toLowerCase() // 1
+        .replace(/[^\w-_.]/g, '') // 2
+        .replace(/\.+/g, '.') // 3
+        .replace(/^\.|\.$/g, '') // 4
+        .replace(/^$/, 'a') // 5
+        .slice(0, 15).replace(/\.$/, ''); // 6
+    const len = answer.length;
+    return len > 2 ? answer : answer + answer.charAt(len - 1).repeat(3 - len);
+}
