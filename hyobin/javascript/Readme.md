@@ -35,3 +35,6 @@ this.id = id.match("/[a-z0-9-_.]/g").join("");
 // (o)
 this.id = id.match(/[a-z0-9-_.]/g).join("");
 ```
+
+- 문자열 끝을 나타내는 $ 기호 활용하기
+  - [신규 아이디 추천](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/regex/2021_KAKAO_BLIND_RECRUIT_LV1.js)
