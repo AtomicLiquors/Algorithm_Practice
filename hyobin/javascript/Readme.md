@@ -27,4 +27,11 @@ numbers.filter(num =>isPrime(+num)).length
   ```
   [[7],[10,0],[18,1,0,null,null,null,null,null,null,null,null,1],[20,8,4,0,null,null,null,null,null,null,null,8,null,null,null,null,null,null,null,null,null,4],[24,13,6,6,0,null,null,null,null,null,null,13,null,null,null,null,null,null,null,null,null,6,null,null,null,null,null,null,null,null,null,6]]
   ```
-
+### 정규식
+- .match()에 정규식 넣을 때는 쌍따옴표를 쓰지 않는다.
+```
+// (x) : .match()가 null을 반환한다.
+this.id = id.match("/[a-z0-9-_.]/g").join("");
+// (o)
+this.id = id.match(/[a-z0-9-_.]/g).join("");
+```
