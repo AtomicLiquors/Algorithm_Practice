@@ -5,7 +5,10 @@
 ### Tip
 - Number()대신 +연산자 사용하기.
 ```
-numbers.filter(num =>isPrime(+num)).length
+// before
+stringifiedNumbers.filter(string => isPrime(Number(string)).length
+// after
+stringifiedNumbers.filter(string => isPrime(+string)).length
 ```
 
 ### 정렬
