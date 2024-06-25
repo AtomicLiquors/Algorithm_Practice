@@ -46,4 +46,5 @@ this.id = id.match(/[a-z0-9-_.]/g).join("");
   - [신규 아이디 추천](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/regex/2021_KAKAO_BLIND_RECRUIT_LV1.js)
  
 ### 누적합
-- [배열의 이중 포문은 불가피한가?](https://kimjingo.tistory.com/155)
+- [2차원 배열의 특정 범위 값 채우기](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/prefix/2D/Programmers_92344.js)
+  - [해설](https://kimjingo.tistory.com/155)
