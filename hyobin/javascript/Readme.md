@@ -4,11 +4,19 @@
 
 ### Tip
 - Number()대신 +연산자 사용하기.
-```
+```javascript
 // before
 stringifiedNumbers.filter(string => isPrime(Number(string)).length
 // after
 stringifiedNumbers.filter(string => isPrime(+string)).length
+```
+
+- 값이 0으로 주어질 경우 1 추가하기 : XOR 연산자 활용
+```javascript
+// before
+value += (target === 0 ? 1 : 0);
+// after
+value += target ^ 1;
 ```
 
 ### 신택스
