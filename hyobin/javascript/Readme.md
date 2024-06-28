@@ -13,6 +13,7 @@ stringifiedNumbers.filter(string => isPrime(+string)).length
 
 ### 신택스
 - [올바른 이차원 배열 선언](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/array/2D/Declaration.md)
+- 콜백 함수에 세미콜론 넣는 실수.
   
 ### 정렬
 - [.sort()로 숫자 정렬](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/sort/Programmers_42576.js)
