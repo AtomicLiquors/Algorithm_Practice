@@ -4,7 +4,7 @@
 
 ### Tip
 - Number()대신 +연산자 사용하기.
-```
+```javascript
 // before
 stringifiedNumbers.filter(string => isPrime(Number(string)).length
 // after
@@ -35,7 +35,7 @@ stringifiedNumbers.filter(string => isPrime(+string)).length
   ```
 ### 정규식
 - .match()에 정규식 넣을 때는 쌍따옴표를 쓰지 않는다.
-```
+```javascript
 // (x) : .match()가 null을 반환한다.
 this.id = id.match("/[a-z0-9-_.]/g").join("");
 // (o)
