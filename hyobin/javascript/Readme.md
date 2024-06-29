@@ -3,7 +3,7 @@
 성능이나 유지보수성 면에서 권장할 코드가 아니다.
 
 ### 테스트 환경별 입력 코드 확인
-```
+```javascript
 // codeforce
 var x = readline();
 ```
