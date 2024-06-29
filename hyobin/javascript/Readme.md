@@ -21,6 +21,7 @@ value += target ^ 1;
 
 ### 신택스
 - [올바른 이차원 배열 선언](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/array/2D/Declaration.md)
+- 콜백 함수에 세미콜론 넣는 실수.
   
 ### 정렬
 - [.sort()로 숫자 정렬](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/sort/Programmers_42576.js)
@@ -43,7 +44,7 @@ value += target ^ 1;
   ```
 ### 정규식
 - .match()에 정규식 넣을 때는 쌍따옴표를 쓰지 않는다.
-```
+```javascript
 // (x) : .match()가 null을 반환한다.
 this.id = id.match("/[a-z0-9-_.]/g").join("");
 // (o)
