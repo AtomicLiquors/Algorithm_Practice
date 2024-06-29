@@ -2,6 +2,12 @@
 프로그래머스 추천 답안은 JS 내장 메서드의 응용 감각을 기르는 것뿐,
 성능이나 유지보수성 면에서 권장할 코드가 아니다.
 
+### 테스트 환경별 입력 코드 확인
+```
+// codeforce
+var x = readline();
+```
+
 ### Tip
 - Number()대신 +연산자 사용하기.
 ```javascript
@@ -10,6 +16,22 @@ stringifiedNumbers.filter(string => isPrime(Number(string)).length
 // after
 stringifiedNumbers.filter(string => isPrime(+string)).length
 ```
+
+Javascript Math.min은 여러 인수를 가질 수 있다.
+```javascript
+console.log(Math.min(2, 3, 1));
+// Expected output: 1
+
+console.log(Math.min(-2, -3, -1));
+// Expected output: -3
+
+const array1 = [2, 3, 1];
+
+console.log(Math.min(...array1));
+// Expected output: 1
+
+```
+
 
 - 값이 0으로 주어질 경우 1 추가하기 : XOR 연산자 활용
 ```javascript
