@@ -2,6 +2,17 @@
 프로그래머스 추천 답안은 JS 내장 메서드의 응용 감각을 기르는 것뿐,
 성능이나 유지보수성 면에서 권장할 코드가 아니다.
 
+### 입력받기
+https://leehyungi0622.github.io/2021/03/24/202103/210324-algorithm_javascript_input/
+```javascript
+const fs = require('fs');
+const inputWithNoEncoding = fs.readFileSync(0).toString().split('\n');
+const inputWithEncoding = fs.readFileSync(0, 'utf8').split('\n');
+const cvtInputToNumber = fs.readFileSync(0, 'utf8').split('\n');
+// ['10', '']와 같은 배열의 형태로 값이 반환되기 때문에 [0]번째 인덱스 값을 가져온다.
+console.log(Number(cvtInputToNumber[0]));
+```
+
 ### Tip
 - Number()대신 +연산자 사용하기.
 ```javascript
