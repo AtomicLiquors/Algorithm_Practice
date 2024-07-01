@@ -15,7 +15,7 @@ console.log(Number(cvtInputToNumber[0]));
 
 **숫자 배열로 변환**
 ```javascript
-const arr = input[1].split(' ').map(Number);
+const arr = input[1].split(' ').filter(s => s !== '').map(Number);
 ```
 
 ### Tip
