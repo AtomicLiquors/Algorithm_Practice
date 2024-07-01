@@ -17,6 +17,7 @@ console.log(Number(cvtInputToNumber[0]));
 ```javascript
 const arr = input[1].split(' ').filter(s => s !== '').map(Number);
 ```
+filter를 해 주지 않으면 ''이 배열에 포함되고 숫자 0으로 변환되는 바람에 코너케이스에 걸린다.
 
 ### Tip
 - Number()대신 +연산자 사용하기.
