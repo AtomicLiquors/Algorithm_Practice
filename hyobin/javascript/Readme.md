@@ -13,6 +13,11 @@ const cvtInputToNumber = fs.readFileSync(0, 'utf8').split('\n');
 console.log(Number(cvtInputToNumber[0]));
 ```
 
+**숫자 배열로 변환**
+```javascript
+const arr = input[1].split(' ').map(Number);
+```
+
 ### Tip
 - Number()대신 +연산자 사용하기.
 ```javascript
