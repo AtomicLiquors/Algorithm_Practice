@@ -12,7 +12,11 @@
 - [ ] 문제에서 간과한 점은? (출력 문제, 데이터 크기, 제약조건 등등)
 - [ ] 코너 케이스
 - [ ] "불가능한 경우" 찾기
-
+  
+숫자 자릿수 구하기
+```java
+(int)Math.log10
+```
 
 - [매개변수 전달이 아닌, 3차원 DP 테이블 선언](https://github.com/TPA-ThreeProblemsAday/TPA_KBK/blob/main/BOJ/dp/BOJ14722.java)
 - [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
@@ -23,3 +27,17 @@
   
 ### 불가능한 경우
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
+
+### 배열
+- 링크 요망
+
+### Comparator | Comparable
+- 링크 요망
+
+### 비트마스킹
+- 링크 요망
+
+### Knapsack은 입력과 동시에 풀 수 있다
+- TPA 호텔 문제 참조바람
+
+### 최대공약수, 소수
