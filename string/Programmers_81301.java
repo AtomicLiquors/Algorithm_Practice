@@ -3,6 +3,7 @@ package string;
 import java.util.*;
 
 class Programmers_81301 {
+    /*
     public int solution(String s) {
         
         Map<String, Integer> map  = new HashMap<>() {{
@@ -38,7 +39,7 @@ class Programmers_81301 {
     
     int addToEnd(int origin, int additive){
         return origin * 10 + additive;
-    }
+    }*/
 }
 
 /* 모범답안 */
