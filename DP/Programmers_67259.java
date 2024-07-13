@@ -1,4 +1,6 @@
-class Solution {
+package DP;
+
+class Programmers_67259 {
 
     int N;
     int[][] board;

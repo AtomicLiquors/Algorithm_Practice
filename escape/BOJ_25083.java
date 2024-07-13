@@ -1,7 +1,7 @@
-// 새싹: 클래스 1 완료
+package escape;// 새싹: 클래스 1 완료
 import java.util.*;
 
-public class Main {
+public class BOJ_25083 {
     public static void main(String[] args){
         StringBuilder sb = new StringBuilder();
         sb.append("         ,r\'\"7").append('\n');

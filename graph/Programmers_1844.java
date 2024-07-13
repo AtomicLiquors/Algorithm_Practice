@@ -1,23 +1,26 @@
+package graph;
+
 import java.util.Queue;
 import java.util.ArrayDeque;
 
-class Node {
+class Node1844 {
     int r;
     int c;
     int tiles;
     
-    Node(int r, int c, int tiles){
+    Node1844(int r, int c, int tiles){
         this.r = r;
         this.c = c;
         this.tiles = tiles;
     }
 }
 
-class Solution {
+class Programmers_1844 {
     int[] dR = {1,0,-1,0};
     int[] dC = {0,1,0,-1};
     
     public int solution(int[][] maps) {
+        /*
         int answer = -1;
         
         Queue<Node> que = new ArrayDeque<>();
@@ -52,5 +55,7 @@ class Solution {
         }
         
         return answer;
+    */
+        return 0;
     }
 }

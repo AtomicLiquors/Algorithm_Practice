@@ -1,4 +1,6 @@
-class Solution {
+package DP;
+
+class programmers_258705 {
     public int solution(int n, int[] tops) {
         int[] D = new int[2 * n + 2];
         D[0] = D[1] = 1;

@@ -1,4 +1,4 @@
-// 2차원 동적 테이블을 1차원으로 변경
+package DP;// 2차원 동적 테이블을 1차원으로 변경
 // 18060KB 140ms -> 14204KB 132ms
 
 
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_동전1 {
+public class BOJ_2293_improved {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

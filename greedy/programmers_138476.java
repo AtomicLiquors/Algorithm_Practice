@@ -1,6 +1,9 @@
+package greedy;
+
 import java.util.*;
 
-class Solution {
+class programmers_138476 {
+    /*
     public int solution(int k, int[] tangerine) {
         // 갯수가 많은 놈부터 담으면 그게 정답이다.
         // 귤의 크기 종류 수가 총 몇 개냐?
@@ -23,4 +26,6 @@ class Solution {
 
         return cnt;
     }
+
+     */
 }

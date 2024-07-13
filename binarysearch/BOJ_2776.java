@@ -1,8 +1,8 @@
-// 암기왕
+package binarysearch;// 암기왕
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class BOJ_2776 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

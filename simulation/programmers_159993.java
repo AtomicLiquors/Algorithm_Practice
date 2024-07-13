@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-class Solution {
+class programmers_159993 {
     int[] dR = {1, 0, -1, 0};
     int[] dC = {0, -1, 0, 1};
     int V, H;

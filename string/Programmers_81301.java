@@ -1,6 +1,8 @@
+package string;
+
 import java.util.*;
 
-class Solution {
+class Programmers_81301 {
     public int solution(String s) {
         
         Map<String, Integer> map  = new HashMap<>() {{

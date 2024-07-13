@@ -1,3 +1,4 @@
+package DP;
 
 import java.io.BufferedReader;
 // 동전 1
@@ -6,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_동전1 {
+public class BOJ_2293 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

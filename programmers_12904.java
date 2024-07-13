@@ -1,4 +1,4 @@
-class Solution
+class programmers_12904
 {
     public int solution(String s)
     {

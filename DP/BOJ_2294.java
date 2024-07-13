@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main_동전2_DP {
+public class BOJ_2294 {
 
 	static int N, K, D[];
 

@@ -1,11 +1,11 @@
-package graph;
+package SpanningTree;// 상근이의 여행
+// KRUSKAL을 이용한 최소 신장 트리.
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-// 시간 초과
 public class Main_9372 {
 
     static int N, M, parents[];
@@ -70,3 +70,6 @@ public class Main_9372 {
         return parents[i] = findSet(parents[i]);
     }
 }
+
+
+// // https://stonage.tistory.com/209

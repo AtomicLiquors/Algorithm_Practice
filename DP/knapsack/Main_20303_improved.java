@@ -1,15 +1,12 @@
-package DP;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
+// https://www.acmicpc.net/status?user_id=gyqls234&problem_id=20303&from_mine=1
 
-public class Main_20303_Union {
-
-    // 	564676KB / 716ms
+public class Main_20303_improved {
     static int[] roots, candies, friends;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -62,17 +59,17 @@ public class Main_20303_Union {
                 listsSize++;
             }
         }
-
-        int[][] DP = new int[listsSize+1][K];
+           
+        int answer = 0;
+        int[] DP = new int[K];
         for (int i = 1; i <= listsSize; i++) {
-            for (int j = 1; j < K; j++) {
+            for (int j = K-1; j >=0; j--) {
                 if(j >= friendSumList.get(i))
-                    DP[i][j] = Math.max(DP[i-1][j], DP[i-1][j - friendSumList.get(i)] + candySumList.get(i));
-                else
-                    DP[i][j] = DP[i-1][j];
+                    DP[j] = Math.max(DP[j], DP[j - friendSumList.get(i)] + candySumList.get(i));
+                    answer = Math.max(DP[j], answer);
             }
         }
-        System.out.println(DP[listsSize][K-1]);
+        System.out.println(answer);
     }
 
     static int findSet(int a){

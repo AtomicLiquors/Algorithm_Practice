@@ -1,9 +1,11 @@
+package graph;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 // 게리맨더링
-public class Main {
+public class BOJ_17471 {
 
     static int N;
     static int numbersToSelect;

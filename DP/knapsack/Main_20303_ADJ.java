@@ -1,4 +1,4 @@
-package DP;
+package DP.knapsack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
