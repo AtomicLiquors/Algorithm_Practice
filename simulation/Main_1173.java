@@ -21,6 +21,7 @@ public class Main_1173 {
         int answer = 0;
         int totalWorkout = 0;
         if (m + T > M){
+            // 불가능한 경우 : 초기 맥박에서 증가량을 더한 값이 항상 최대 맥박을 초과하여, 절대 운동을 할 수 없을 때
             System.out.println(-1);
             br.close();
             return;
