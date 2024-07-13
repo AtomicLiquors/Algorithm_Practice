@@ -1,0 +1,1 @@
+-[좌표별 도착시간을 별도의 이차원 int 배열에 저장하는 방법.](https://school.programmers.co.kr/learn/courses/30/lessons/159993/solution_groups?language=java)
