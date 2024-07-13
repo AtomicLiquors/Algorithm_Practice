@@ -1,12 +1,26 @@
 ### ⚠️ 실제 코드는 인라인으로 작성하지 말 것! ⚠️ 
+forEach, map, filter, reduce 등등 
+고차 함수 기반의 함수형 프로그래밍은 제어문 사용을 줄이고 가독성을 높이는 데 의미가 있다.  
 프로그래머스 추천 답안은 JS 내장 메서드의 응용 감각을 기르는 것뿐,
 성능이나 유지보수성 면에서 권장할 코드가 아니다.
 
-### 테스트 환경별 입력 코드 확인
+
+### 입력받기
+https://leehyungi0622.github.io/2021/03/24/202103/210324-algorithm_javascript_input/
 ```javascript
-// codeforce
-var x = readline();
+const fs = require('fs');
+const inputWithNoEncoding = fs.readFileSync(0).toString().split('\n');
+const inputWithEncoding = fs.readFileSync(0, 'utf8').split('\n');
+const cvtInputToNumber = fs.readFileSync(0, 'utf8').split('\n');
+// ['10', '']와 같은 배열의 형태로 값이 반환되기 때문에 [0]번째 인덱스 값을 가져온다.
+console.log(Number(cvtInputToNumber[0]));
 ```
+
+**숫자 배열로 변환**
+```javascript
+const arr = input[1].split(' ').filter(s => s !== '').map(Number);
+```
+filter를 해 주지 않으면 ''이 배열에 포함되고 숫자 0으로 변환되는 바람에 코너케이스에 걸린다.
 
 ### Tip
 - Number()대신 +연산자 사용하기.
