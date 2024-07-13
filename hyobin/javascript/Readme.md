@@ -31,6 +31,30 @@ stringifiedNumbers.filter(string => isPrime(Number(string)).length
 stringifiedNumbers.filter(string => isPrime(+string)).length
 ```
 
+Javascript Math.min은 여러 인수를 가질 수 있다.
+```javascript
+console.log(Math.min(2, 3, 1));
+// Expected output: 1
+
+console.log(Math.min(-2, -3, -1));
+// Expected output: -3
+
+const array1 = [2, 3, 1];
+
+console.log(Math.min(...array1));
+// Expected output: 1
+
+```
+
+
+- 값이 0으로 주어질 경우 1 추가하기 : XOR 연산자 활용
+```javascript
+// before
+value += (target === 0 ? 1 : 0);
+// after
+value += target ^ 1;
+```
+
 ### 신택스
 - [올바른 이차원 배열 선언](https://github.com/TPA-ThreeProblemsAday/TPA_CHB/blob/main/hyobin/javascript/array/2D/Declaration.md)
 - 콜백 함수에 세미콜론 넣는 실수.
