@@ -34,6 +34,10 @@
 ### Comparator | Comparable
 - 링크 요망
 
+### List의 수정 메서드는 add(idx, elem)가 아니라 set(idx, elem)이다.
+add는 기존 항목을 수정하는 게 아니라 idx 자리에 항목을 하나 추가한다.
+- [BOJ 2504](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/stack/Main_2504.java)
+
 ### 비트마스킹
 - 링크 요망
 
