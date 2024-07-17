@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Main_2504 {
+public class Main_2504_Array {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
         int N = input.length();
 
         Stack<Character> st = new Stack<>();
-        List<Integer> sums = new ArrayList<>();
+        int[] sums = new int[N];
         int idx = -1;
         int answer = 0;
 
@@ -23,18 +23,17 @@ public class Main_2504 {
 
            if(curr == '(' || curr == '['){
                st.push(curr);
-               sums.add(0);
-               idx++;
+               sums[++idx] = 0;
            }else{
                if(st.isEmpty() || !isPair(st.peek(), curr)){
                    System.out.println(0);
                    return;
                }else{
                    st.pop();
-                   int total = sums.remove(idx);
+                   int total = sums[idx];
                    int result = (total == 0 ? 1 : total) * getMult(curr);
                    if(--idx >= 0){
-                       sums.set(idx, sums.get(idx) + result);
+                       sums[idx] = sums[idx] + result;
                    }else{
                        answer += result;
                    }
