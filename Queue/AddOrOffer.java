@@ -22,13 +22,17 @@ public class AddOrOffer {
             if(input == -1){
                 int removedItem = que.poll();
                 System.out.printf("큐에서 원소 제거됨 : %d\n", removedItem);
+                continue;
             }
 
             /* 0을 입력한 경우 반복문을 종료합니다. */
             if(input == 0)
                 break;
 
-            que.add(input);
+            boolean result = que.offer(input);
+            if (!result) {
+                System.err.println("에러 : 큐가 가득 찼습니다!");
+            }
         }
 
         System.out.println("큐 상태 : " + que);
@@ -36,40 +40,29 @@ public class AddOrOffer {
 }
 
 class Storage {
-    static void addTenTimes(Queue que) {
-        /* 1부터 10까지 add로 큐에 집어넣는 연산을 실행합니다. */
-        for (int i = 1; i <= 10; i++) {
-            que.add(i);
-        }
+    static void add(Queue que, int i) {
+        que.add(i);
     }
 
-    static void offerTenTimes(Queue que) {
-        /* 1부터 10까지 offer로 큐에 집어넣는 연산을 실행합니다. */
-        for (int i = 1; i <= 10; i++) {
-            que.offer(i);
-        }
+    static void offer(Queue que, int i) {
+        que.offer(i);
     }
 
-    static void addTenTimesWithTryCatch(Queue que) {
+    static void addWithTryCatch(Queue que, int i) {
         /* 1부터 10까지 add로 큐에 집어넣는 연산을 실행합니다. */
         try {
-            for (int i = 1; i <= 10; i++) {
-                que.add(i);
-            }
+            que.add(i);
         } catch (IllegalStateException e) {
             System.err.println("에러 : 큐가 가득 찼습니다!");
         }
     }
 
-    static void offerTenTimesWithResult(Queue que) {
+    static void offerWithResult(Queue que, int i) {
         /* 1부터 10까지 offer로 큐에 집어넣는 연산을 실행합니다. */
 
-        for (int i = 1; i <= 10; i++) {
-            boolean result = que.offer(i);
-            if (!result) {
-                System.err.println("에러 : 큐가 가득 찼습니다!");
-                break;
-            }
+        boolean result = que.offer(i);
+        if (!result) {
+            System.err.println("에러 : 큐가 가득 찼습니다!");
         }
     }
 }
