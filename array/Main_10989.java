@@ -17,7 +17,7 @@ public class Main_10989 {
         for (int i = 0; i < N; i++)
            arr[i] = Integer.parseInt(br.readLine());
 
-        quickSort(arr, 0, N-2, N-1);
+        quickSort(arr, 0, N-1);
 
         StringBuilder sb = new StringBuilder();
 
@@ -27,29 +27,32 @@ public class Main_10989 {
         System.out.print(sb);
         br.close();
     }
-    static void quickSort(int[] arr, int left, int right, int idx){
-        if(left >= right)
+    static void quickSort(int[] arr, int start, int end){
+        if(start >= end)
             return;
-        int pivot = arr[idx];
+        int pivot = end;
 
-        while(true){
-            while(pivot > arr[left] || left < right){
+        int left = start;
+        int right = end;
+
+        while(left <= right){
+            while(arr[pivot] > arr[left]){
                 left++;
             }
 
-            while(pivot < arr[right] || left < right){
+            while(arr[pivot] < arr[right]){
                 right--;
             }
-            if(left < right)
-                break;
-
-            int temp = arr[right];
-            arr[right] = arr[left];
-            arr[left] = temp;
+            if(left <= right){
+                int temp = arr[right];
+                arr[right] = arr[left];
+                arr[left] = temp;
+                left++;
+                right--;
+            }
         }
-        arr[idx] = arr[left];
-        arr[left] = pivot;
-        quickSort(arr, left, right-1, right);
-        quickSort(arr, right+1, N-2, N-1);
+
+        quickSort(arr, start, right);
+        quickSort(arr, left, end);
     }
 }
