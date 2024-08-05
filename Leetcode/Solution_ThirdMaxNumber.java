@@ -1,3 +1,5 @@
+package Leetcode;
+
 class Solution_ThirdMaxNumber {
     public int thirdMax(int[] nums) {
         int first = Integer.MIN_VALUE;
