@@ -46,3 +46,7 @@ add는 기존 항목을 수정하는 게 아니라 idx 자리에 항목을 하�
 
 ### Knapsack은 입력과 동시에 풀 수 있다
 - TPA 호텔 문제 참조바람
+
+
+### Flood Fill 형태라면 BFS가 더 유리하다.
+"BFS is generally more efficient for this kind of problem because it avoids deep recursion and can be implemented iteratively with a queue."
