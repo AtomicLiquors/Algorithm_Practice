@@ -18,6 +18,11 @@
 (int)Math.log10
 ```
 
+- [Map - getOrDefault()](https://gymdev.tistory.com/39)
+  - 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
+- [Map의 Key들을 이용해 리스트 만들기]
+   ```List<Integer> list = new ArrayList<>(map.keySet())```
+
 - [매개변수 전달이 아닌, 3차원 DP 테이블 선언](https://github.com/TPA-ThreeProblemsAday/TPA_KBK/blob/main/BOJ/dp/BOJ14722.java)
 - [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
@@ -47,7 +52,7 @@ add는 기존 항목을 수정하는 게 아니라 idx 자리에 항목을 하�
 - TPA 호텔 문제 참조바람
 
 ### Map과 Set으로 시뮬레이션 최적화
-simulation > Main_16946_GPT
+[simulation > Main_16946_GPT](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_16946_GPT.java)
 
 ### Flood Fill 형태라면 BFS가 더 유리하다.
 "BFS is generally more efficient for this kind of problem because it avoids deep recursion and can be implemented iteratively with a queue."
