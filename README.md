@@ -13,10 +13,6 @@
 - [ ] 코너 케이스
 - [ ] "불가능한 경우" 찾기
   
-숫자 자릿수 구하기
-```java
-(int)Math.log10
-```
 
 - [Map - getOrDefault()](https://gymdev.tistory.com/39)
   - 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
