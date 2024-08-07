@@ -42,6 +42,8 @@ public class Main_16946 {
             for (int j = 0; j < M; j++) {
                 if(answer[i][j] > 0){
                     int r, c;
+                    // 1) dfs로 movable한 칸 수 세기 뭐가 잘못됐나?
+                    // 2) 4방탐색 할때 서로 같은 집합에 속해있단 걸 어떻게 간단하게 입증할까?
                     for (int k = 0; k < 4; k++) {
                         r = i + dR[k];
                         c = j + dC[k];
