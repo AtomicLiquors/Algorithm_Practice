@@ -30,7 +30,7 @@
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
 
 ### 배열
-- 링크 요망
+- [링크 요망](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
 
 ### Comparator | Comparable
 - 링크 요망
