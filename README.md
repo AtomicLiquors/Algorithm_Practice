@@ -23,7 +23,8 @@
 - [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
 
-
+### 수학
+[링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
   
 ### 불가능한 경우
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
