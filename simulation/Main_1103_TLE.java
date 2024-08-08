@@ -5,9 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_1103 {
-    // TLE
-    // Union Find로 사이클 탐지하는 알고리즘?
+public class Main_1103_TLE {
     static int N, M, answer;
     static int[] dR = {0,0,-1,1};
     static int[] dC = {-1,1,0,0};

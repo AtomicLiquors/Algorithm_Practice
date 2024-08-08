@@ -28,6 +28,7 @@
   
 ### 불가능한 경우
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
+- [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250)
 
 ### 배열
 - [링크 요망](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
