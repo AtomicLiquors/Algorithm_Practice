@@ -32,6 +32,7 @@
 
 ### 배열
 - [링크 요망](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
+- 원소가 많아 시간 초과가 난 경우, 투 포인터 또는 이분 탐색을 의심해 봐라.
 
 ### Comparator | Comparable
 - 링크 요망
@@ -46,8 +47,6 @@
    예) N개의 원소로부터 nC2개의 조합을 만드는 경우 원소의 개수는 N(N-1)/2.
   ```
 
-### 배열 문제의 시간 초과
-투 포인터 또는 이분 탐색을 의심해 봐라.
 
 ### 비트마스킹
 - 링크 요망
