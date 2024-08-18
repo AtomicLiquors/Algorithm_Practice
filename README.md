@@ -50,11 +50,15 @@
 - [TPA 호텔 문제 참조바람](https://github.com/TPA-ThreeProblemsAday/TPA_CodeReview?tab=readme-ov-file#20240115---1%EC%A3%BC%EC%B0%A8)
 
 ### Map
-- [Map - getOrDefault()](https://gymdev.tistory.com/39)
-  - 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
-- [Map의 Key들을 이용해 리스트 만들기]
-   ```List<Integer> list = new ArrayList<>(map.keySet())```
 - [Map과 Set으로 시뮬레이션 최적화](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_16946_GPT.java)
+- 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
+   ```
+  [Map - getOrDefault()](https://gymdev.tistory.com/39)
+   ```
+- Map의 Key들을 이용해 리스트 만들기
+  ```
+  List<Integer> list = new ArrayList<>(map.keySet())
+  ```
 
 ### Flood Fill 형태라면 BFS가 더 유리하다.
 "BFS is generally more efficient for this kind of problem because it avoids deep recursion and can be implemented iteratively with a queue."
