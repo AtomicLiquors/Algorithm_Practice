@@ -30,7 +30,7 @@
 - 원소가 많아 시간 초과가 난 경우, 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
 
 ### Comparator | Comparable
-- [PQ 적용 예시](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/priorityqueue)
+- [링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
 
 ### List
 - List의 수정 메서드는 add(idx, elem)가 아니라 set(idx, elem)이다.
