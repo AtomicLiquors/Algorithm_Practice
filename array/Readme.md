@@ -14,7 +14,7 @@ TPA 인구 이동 문제 참고
 ```
 
 ### List를 Array로
-[관련 문제](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/array/Main_20920.java)
 ```java
 String[] arr = list.toArray(new String[0]);
 ```
+[관련 문제](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/array/Main_20920.java)
