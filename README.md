@@ -18,19 +18,28 @@
 - [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
   
+<br>
+  
 ### 불가능한 경우
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
 - [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250)
 
+<br>
 
 ### 시간 초과
 원소 갯수가 많다면 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
+
+<br>
 
 ### 목차
 - [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
 - [배열](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
 - [Comparator | Comparable](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
 - [비트마스킹](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking)
+- [시뮬레이션](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/simulation)
+- [DP](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/DP)
+
+<br>
 
 ### List
 - List의 수정 메서드는 add(idx, elem)가 아니라 set(idx, elem)이다.
@@ -45,9 +54,6 @@
 
 
 
-### Knapsack은 입력과 동시에 풀 수 있다
-- [TPA 호텔 문제 참조바람](https://github.com/TPA-ThreeProblemsAday/TPA_CodeReview?tab=readme-ov-file#20240115---1%EC%A3%BC%EC%B0%A8)
-
 ### Map
 - [Map과 Set으로 시뮬레이션 최적화](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_16946_GPT.java)
 - 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
@@ -58,6 +64,3 @@
   ```
   List<Integer> list = new ArrayList<>(map.keySet())
   ```
-
-### Flood Fill 형태라면 BFS가 더 유리하다.
-"BFS is generally more efficient for this kind of problem because it avoids deep recursion and can be implemented iteratively with a queue."
