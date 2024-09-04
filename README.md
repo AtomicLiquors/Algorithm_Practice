@@ -17,20 +17,15 @@
 - [매개변수 전달이 아닌, 3차원 DP 테이블 선언](https://github.com/TPA-ThreeProblemsAday/TPA_KBK/blob/main/BOJ/dp/BOJ14722.java)
 - [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
-
-### 수학
-[링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
   
 ### 불가능한 경우
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
 - [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250)
 
-### 배열
-- [링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
-- 원소가 많아 시간 초과가 난 경우, 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
-
-### Comparator | Comparable
-- [링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
+### 목차
+- [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
+- [배열](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
+- [Comparator | Comparable](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
 
 ### List
 - List의 수정 메서드는 add(idx, elem)가 아니라 set(idx, elem)이다.
