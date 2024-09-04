@@ -30,6 +30,7 @@
 - [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
 - [배열](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
 - [Comparator | Comparable](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
+- [비트마스킹](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking)
 
 ### List
 - List의 수정 메서드는 add(idx, elem)가 아니라 set(idx, elem)이다.
@@ -42,8 +43,7 @@
   ```
 
 
-### 비트마스킹
-- [링크](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking)
+
 
 ### Knapsack은 입력과 동시에 풀 수 있다
 - [TPA 호텔 문제 참조바람](https://github.com/TPA-ThreeProblemsAday/TPA_CodeReview?tab=readme-ov-file#20240115---1%EC%A3%BC%EC%B0%A8)
