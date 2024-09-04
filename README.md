@@ -22,6 +22,10 @@
 - [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
 - [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250)
 
+
+### 시간 초과
+원소 갯수가 많다면 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
+
 ### 목차
 - [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
 - [배열](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
