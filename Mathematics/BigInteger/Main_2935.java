@@ -1,4 +1,4 @@
-package biginteger;
+package Mathematics.BigInteger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
