@@ -38,6 +38,7 @@
 - [비트마스킹](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking)
 - [시뮬레이션](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/simulation)
 - [DP](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/DP)
+- [Regex](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/regex)
 
 <br>
 
