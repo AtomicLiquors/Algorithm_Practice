@@ -15,7 +15,7 @@
   
 
 - [매개변수 전달이 아닌, 3차원 DP 테이블 선언](https://github.com/TPA-ThreeProblemsAday/TPA_KBK/blob/main/BOJ/dp/BOJ14722.java)
-- [BFS도 DP도 아닌, 규칙 찾기 문제](https://st-lab.tistory.com/79)
+
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
   
 <br>
@@ -52,7 +52,7 @@
    예) N개의 원소로부터 nC2개의 조합을 만드는 경우 원소의 개수는 N(N-1)/2.
   ```
 
-
+<br>
 
 
 ### Map
@@ -65,3 +65,9 @@
   ```
   List<Integer> list = new ArrayList<>(map.keySet())
   ```
+
+<br>
+
+### BFS도 DP도 아닌, 규칙 찾기 문제
+  - [1](https://st-lab.tistory.com/79)
+  - [2](https://www.acmicpc.net/problem/2292)
