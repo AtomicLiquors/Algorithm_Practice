@@ -26,6 +26,7 @@ key = -key - 2;
 ### 상한과 하한 개념
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md)
 
+<br>
 
 ### TroubleShooting
 [[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
