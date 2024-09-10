@@ -13,13 +13,13 @@ int key = Arrays.binarySearch(trees, mid);
 if(key < 0)
 key = -key - 2;
 ```
-
-<br>
-
 #### 활용예시
 [[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)
 
 <br>
+
+### 이분 탐색의 대상은 배열의 인덱스뿐만이 아니다
+[링크](https://st-lab.tistory.com/269)
 
 ### 상한과 하한 개념
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md)
