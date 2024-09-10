@@ -22,4 +22,4 @@ key = -key - 2;
 
 ### TroubleShooting
 [[Main_2805]](#)  
-[[이분 탐색은 off-by-one error가 발생하기 쉬워서 늘 헷갈립니다.]](https://www.acmicpc.net/blog/view/109)
+[[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)
