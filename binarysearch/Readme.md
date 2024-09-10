@@ -21,6 +21,8 @@ key = -key - 2;
 ### 이분 탐색의 대상은 배열의 인덱스뿐만이 아니다
 [링크](https://st-lab.tistory.com/269)
 
+<br>
+
 ### 상한과 하한 개념
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md)
 
