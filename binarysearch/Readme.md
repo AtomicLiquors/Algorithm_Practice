@@ -17,9 +17,15 @@ key = -key - 2;
 <br>
 
 #### 활용예시
-[[Main_2805]](#)
+[[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)
+
+<br>
+
+### 상한과 하한 개념
+[링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md)
 
 
 ### TroubleShooting
-[[Main_2805]](#)  
+[[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
 [[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)
+[[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)
