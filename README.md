@@ -31,6 +31,12 @@
 
 <br>
 
+### 정수 오버플로우
+[백준 1629](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/recursive/Main_1629.java)
+
+<br>
+
+
 ### 목차
 - [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
 - [배열](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
