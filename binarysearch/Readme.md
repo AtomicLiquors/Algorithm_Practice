@@ -30,5 +30,6 @@ key = -key - 2;
 
 ### TroubleShooting
 [[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
-[[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)
-[[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)
+[[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)  
+[[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)  
+구현 실수 - ```arr[mid]```가 아니라 ```mid```를 비교한 경우  
