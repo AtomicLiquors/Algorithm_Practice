@@ -78,3 +78,8 @@
 ### BFS도 DP도 아닌, 규칙 찾기 문제
   - [1](https://st-lab.tistory.com/79)
   - [2](https://www.acmicpc.net/problem/2292)
+
+<br>
+
+### 깡 반복문 문제
+  - [1](https://school.programmers.co.kr/learn/courses/30/lessons/340198)
