@@ -59,19 +59,6 @@
    예) N개의 원소로부터 nC2개의 조합을 만드는 경우 원소의 개수는 N(N-1)/2.
   ```
 
-<br>
-
-
-### Map
-- [Map과 Set으로 시뮬레이션 최적화](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_16946_GPT.java)
-- 찾는 키가 존재한다면 찾는 키의 값을 반환하고, 없다면 기본 값을 반환하는 메서드
-   ```
-  [Map - getOrDefault()](https://gymdev.tistory.com/39)
-   ```
-- Map의 Key들을 이용해 리스트 만들기
-  ```
-  List<Integer> list = new ArrayList<>(map.keySet())
-  ```
 
 <br>
 
