@@ -32,12 +32,19 @@
 
 <br>
 
-### 정수 오버플로우
+### 틀렸습니다 : 히든 테스트 케이스에 걸렸을 때
+#### 정수 오버플로우
 - [백준 1629](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/recursive/Main_1629.java)
 - [[코너 케이스] 런타임 에러 : long만큼 긴 문자열을 int로 파싱](https://school.programmers.co.kr/learn/courses/30/lessons/147355?language=java)
 
 <br>
 
+
+#### 경곗값
+
+
+#### 기타
+[백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
 
 ### 목차
 - [Map](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Map.md)
@@ -67,6 +74,13 @@
 ### BFS도 DP도 아닌, 규칙 찾기 문제
   - [1](https://st-lab.tistory.com/79)
   - [2](https://www.acmicpc.net/problem/2292)
+
+<br>
+
+### [추가 시간 없음] 
+백준 제한 시간은 c++기준이고 Java는 2x+1, Python은 3x+2 정도 가중치가 붙는다.
+추가시간이 없다면 그냥 얄짤없이 써 있는 시간대로 풀어야 되고,
+시간복잡도를 고민해봐야 된다는 것.
 
 <br>
 
