@@ -68,6 +68,12 @@
    예) N개의 원소로부터 nC2개의 조합을 만드는 경우 원소의 개수는 N(N-1)/2.
   ```
 
+<br>
+
+### 영역의 크기 구하기
+- BFS를 돌리면서 좌표를 별도의 Queue에 담았다가, while문 종료 후 갯수를 배열에 저장.
+- Map, Set을 활용하는 풀이도 참고바람.
+  [프로그래머스 석유 시추](https://school.programmers.co.kr/learn/courses/30/lessons/250136)
 
 <br>
 
