@@ -34,3 +34,7 @@ for(int r=0; r<N; r++){
 	for(int c=0; c<N; c++) tmp_arr[c][N-1-r] = arr[r][c];
 }
 ```
+
+### 직사각형 배열 돌리기
+백준 16926번  
+[풀이](https://seen-young.tistory.com/127)
