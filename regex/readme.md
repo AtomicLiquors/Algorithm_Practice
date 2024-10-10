@@ -46,6 +46,8 @@ Matcher matcher = pattern.matcher(searchTarget);
 
 ## 문제풀이 예시
 - ['하나 이상'의 유무에 주의하기](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_9996.java)
-- [문자열 반복 : 똑같은 문자, 또는 같은 그룹에 속하는 문자](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_4659.java)
+- 문자열 반복 : 똑같은 문자, 또는 같은 그룹에 속하는 문자
+    - [1](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_4659.java)
+    - [2](https://school.programmers.co.kr/learn/courses/30/lessons/133499)
 - [대소문자 무시](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_5698.java)
   
