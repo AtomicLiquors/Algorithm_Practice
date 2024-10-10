@@ -28,7 +28,7 @@
 
 ### 시간 초과
 - 원소 갯수가 많다면 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
-- [Stack을 활용한 탐색 속도 단축하기](https://www.acmicpc.net/problem/2493)
+- [Stack을 활용한 탐색 속도 단축하기](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stack#stack%EC%9C%BC%EB%A1%9C-%ED%83%90%EC%83%89-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95%ED%95%98%EA%B8%B0)
 
 <br>
 
