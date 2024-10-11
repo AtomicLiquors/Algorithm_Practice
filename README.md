@@ -55,6 +55,7 @@
 - [시뮬레이션](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/simulation)
 - [DP](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/DP)
 - [Regex](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/regex)
+- [문자열 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stringSearching)
 
 <br>
 
