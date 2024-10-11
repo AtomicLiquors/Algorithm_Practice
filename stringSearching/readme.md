@@ -4,6 +4,8 @@ String large = "aabbcc";
 String small = "ab";
 ```
 
+<br>
+
 ### 문자열 포함 여부 확인
 ```java
 large.contains(small);
