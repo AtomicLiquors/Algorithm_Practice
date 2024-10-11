@@ -67,6 +67,10 @@
   ```
    예) N개의 원소로부터 nC2개의 조합을 만드는 경우 원소의 개수는 N(N-1)/2.
   ```
+- 리스트 정렬
+  ```java
+  Collections.sort(list, ((o1, o2) -> (o2.stone - o1.stone)));
+  ```
 
 <br>
 
