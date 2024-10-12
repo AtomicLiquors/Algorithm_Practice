@@ -75,6 +75,32 @@
 
 <br>
 
+### Queue
+큐의 사이즈로 for문을 돌리지 않는다.  
+반복문 회차를 돌릴 때마다 큐 사이즈가 새로 측정된다.
+
+
+```java
+    // O
+    int size = deque.size();
+    int[] answer = new int[size];
+    
+    for(int i = 0; i < size; i++){
+        answer[i] = deque.poll();
+    }
+```
+
+```java
+    // X
+    int[] answer = new int[deque.size()];
+    
+    for(int i = 0; i < deque.size(); i++){
+        answer[i] = deque.poll();
+    }
+```
+
+<br>
+
 ### 영역의 크기 구하기
 - BFS를 돌리면서 좌표를 별도의 Queue에 담았다가, while문 종료 후 갯수를 배열에 저장.
 - Map, Set을 활용하는 풀이도 참고바람.
