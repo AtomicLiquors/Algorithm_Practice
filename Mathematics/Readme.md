@@ -13,5 +13,5 @@
 
 ### 숫자 자릿수 구하기
 ```java
-(int)Math.log10
+int length = (int)Math.log10(n) + 1
 ```
