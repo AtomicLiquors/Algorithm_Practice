@@ -1,4 +1,5 @@
-class Solution {
+/*
+class Programmers_43162 {
     
     int[] parents;
     int answer = 0;
@@ -39,3 +40,4 @@ class Solution {
         } 
     }
 }
+ */
