@@ -15,7 +15,11 @@ public class Main_9996 {
         for (int i = 0; i < pattern.length(); i++){
             char c = pattern.charAt(i);
             regexSB.append(c == '*' ? "(\\w+)?" : c);
+
+            // 오답 코드
+            // regexSB.append(c == '*' ? "\\w+" : c);
         }
+        
 
         String regex = regexSB.toString();
 
