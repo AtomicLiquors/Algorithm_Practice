@@ -56,4 +56,13 @@ class Solution {
         return answer;
     }
 }
+
+<br>
+
+#### 경곗값
+
+<br>
+
+#### 기타
+[백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
 ```
