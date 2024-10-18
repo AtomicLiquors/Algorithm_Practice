@@ -20,12 +20,15 @@ public class StringRegexExample {
     public static void main(String[] args) {
         // 검사할 문자열
         String input = "hello world";
-        // 정규 표현식 (모음 찾기)
-        String regex = "([^aeiou]*)"; // 모음이 아닌 부분을 빈 문자열로 대체하여 모음 추출
 
-        // 일치하는 부분을 추출
+        // 모음 찾기 : 정규 표현식 패턴 선언
+        String regex = "([^aeiou]*)";
+
+        // 모음 추출 : 모음이 아닌 부분을 빈 문자열로 대체
         String result = input.replaceAll(regex, "");
-        System.out.println("Extracted: " + result);
+
+        // 출력 결과 : "eoo"
+        System.out.println(result);
     }
 }
 
