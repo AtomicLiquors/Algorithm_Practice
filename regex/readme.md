@@ -4,7 +4,7 @@
 ### 정규 표현식 패턴에 대해서는 Pattern.md로.
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Pattern.md)
 
-### String 내장 메서드
+### Regex를 사용하는 String 내장 메서드
 일치 여부 검증
 ```java
 str.matches("pattern");
