@@ -37,12 +37,6 @@
 <br>
 
 
-#### 경곗값
-
-
-#### 기타
-[백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
-
 ### 목차
 - [Map](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Map.md)
 - [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
