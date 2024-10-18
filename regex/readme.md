@@ -49,6 +49,12 @@ Matcher matcher = pattern.matcher(searchTarget);
 
 ## 문제풀이 예시
 - ['하나 이상'의 유무에 주의하기](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_9996.java)
+
+    - "\w+"는 하나 이상의 단어 문자가 **반드시 있어야 한다.**
+    - (\w+)?는 하나 이상의 단어 문자가 없더라도 상관없다.
+    - 문장 "added ad and aid"에 대해
+        - "a\w+d" -> [added, and, aid]
+        - "a(\w+)?d" -> [added, **ad**, and, aid]
 - 문자열 반복 : 똑같은 문자, 또는 같은 그룹에 속하는 문자
     - [1](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_4659.java)
     - [2](https://school.programmers.co.kr/learn/courses/30/lessons/133499)
