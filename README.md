@@ -33,10 +33,7 @@
 <br>
 
 ### 틀렸습니다 : 히든 테스트 케이스에 걸렸을 때
-#### 정수 오버플로우
-- [백준 1629](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/recursive/Main_1629.java)
-- [[코너 케이스] 런타임 에러 : long만큼 긴 문자열을 int로 파싱](https://school.programmers.co.kr/learn/courses/30/lessons/147355?language=java)
-
+[링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Wrong_Answer.md)
 <br>
 
 
