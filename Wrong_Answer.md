@@ -56,6 +56,7 @@ class Solution {
         return answer;
     }
 }
+```
 
 <br>
 
@@ -65,4 +66,10 @@ class Solution {
 
 #### 기타
 [백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
-```
+
+<br>
+
+#### 기타
+[백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
+[백준 16976 배열 복원하기](https://www.acmicpc.net/problem/16967)
+테스크 케이스 배열의 크기를 늘렸을 때 반례를 발견할 수 있었다.
