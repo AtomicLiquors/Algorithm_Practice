@@ -1,8 +1,8 @@
 
-## Java에서 Regex 사용하는 문법.
+## About
+정규 표현식을 사용하는 Java 문법.
 
-### 정규 표현식 패턴에 대해서는 Pattern.md로.
-[링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Pattern.md)
+[정규 표현식 패턴에 대해서는 Pattern.md로.](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Pattern.md)
 
 ### Regex를 사용하는 String 내장 메서드
 일치 여부 검증
