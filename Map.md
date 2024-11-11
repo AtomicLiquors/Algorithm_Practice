@@ -1,4 +1,8 @@
-### Map
+### 👨‍💻 About
+Map을 이용한 문제풀이 모음
+
+<br>
+
 #### Map과 Set으로 시뮬레이션 최적화
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_16946_GPT.java)
 
