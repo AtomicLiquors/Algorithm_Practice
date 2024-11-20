@@ -51,6 +51,9 @@ public class Main_15686 {
 
     static void subset(int cnt, int idx){
         if(idx == storeLength){
+            if(cnt == 0)
+                return;
+
             for (int i = 0; i < storeLength; i++) {
                 if(!isSelected[i])
                     removeStore(i);
@@ -88,9 +91,8 @@ public class Main_15686 {
     static void findMinimumDistance(){
         int regionalChickenDistance = 0;
 
-        for (int i = 0; i < houseLength; i++) {
+        for (int i = 0; i < houseLength; i++)
             regionalChickenDistance += getChickenDistance(i);
-        }
 
         answer = Math.min(answer, regionalChickenDistance);
     }
@@ -115,7 +117,6 @@ public class Main_15686 {
 
             if(map[r][c] == 2){
                 distance = offset;
-                que.clear();
                 break;
             }
 

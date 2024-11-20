@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 public class SubsetLimited {
     // N개 중 M개를 뽑는 코드 - 내가 만든 거라서 검증요.
+    // cnt가 0이 나오는 경우가 있다. (단 하나도 뽑지 않는 경우) 이건 원래 subset에서도 동일한가? 뭐 부분집합이라니 공집합도 있겠지.
 
     static int N, M;
     static boolean[] isSelected;
