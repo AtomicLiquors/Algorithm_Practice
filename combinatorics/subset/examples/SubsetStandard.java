@@ -1,4 +1,4 @@
-package combinatorics.subset;
+package combinatorics.subset.examples;
 
 public class SubsetStandard {
     static int N = 5;
