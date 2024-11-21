@@ -92,7 +92,7 @@
 |------------|------------|------------|
 | 🚀 | rocket | SOLVED |
 | 🔥 | fire | FAILED |
-| 🚧 | construction  | 패키지 구조 정리 및 기타 유지보수 |
+| :package: | package  | 패키지 구조 정리 및 기타 유지보수 |
 | 📝 | memo | 문서 업데이트 |
 
  
