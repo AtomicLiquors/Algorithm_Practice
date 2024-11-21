@@ -1,1 +1,3 @@
-[링크](https://dot-shift-674.notion.site/APS-a045a9e8aa9e487981a8fdc34e7a1c82)
+### About
+- 집합의 원소들을 $_nC_0$부터 $_nC_n$까지 모두 뽑는 알고리즘.
+- 공집합이 포함되는 점에 유의하기 바란다.
