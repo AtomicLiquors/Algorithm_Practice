@@ -4,6 +4,18 @@
 
 <br>
 
+### 코드
+[유사 코드](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetPseudo.md)
+[부분집합 기본](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetStandard.java)
+[N개 중 최대 M개까지](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetLimited.java)
+
+<br>
+
+### 문제해결
+[링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/Troubleshooting.md)
+
+<br>
+
 ### 개념
 #### n개의 원소에 대해 부분집합 개수는 몇 개인가요?
 $2^n$개 (공집합 포함)  
