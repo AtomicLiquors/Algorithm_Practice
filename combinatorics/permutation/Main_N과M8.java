@@ -1,4 +1,4 @@
-package combinatorics;
+package combinatorics.permutation;
 
 import java.io.*;
 import java.util.Arrays;

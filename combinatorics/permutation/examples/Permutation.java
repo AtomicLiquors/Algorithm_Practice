@@ -1,4 +1,4 @@
-package combinatorics;
+package combinatorics.permutation.examples;
 
 import java.util.Arrays;
 

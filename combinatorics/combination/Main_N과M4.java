@@ -1,4 +1,4 @@
-package combinatorics;
+package combinatorics.combination;
 
 import java.util.Scanner;
 

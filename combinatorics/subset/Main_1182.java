@@ -1,4 +1,4 @@
-package combinatorics;
+package combinatorics.subset;
 
 import java.io.BufferedReader;
 import java.io.IOException;

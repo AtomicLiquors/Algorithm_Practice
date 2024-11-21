@@ -1,4 +1,4 @@
-package combinatorics;
+package combinatorics.subset;
 
 public class Programmers_42839 {
     int answer = 0;
