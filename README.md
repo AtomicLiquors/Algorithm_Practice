@@ -38,19 +38,22 @@
 
 
 ### 목차
-- [Array](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)
-- [List](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/List.md)
-- [Queue](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Queue/Readmd.md)
-- [Map](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Map.md)
-- [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics)
-- [Comparator | Comparable](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator)
-- [비트마스킹](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking)
-- [시뮬레이션](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/simulation)
-- [DP](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/DP)
-- [Regex](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/regex)
-- [문자열 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stringSearching)
-- [순열, 조합, 부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics)
-  - [부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics/subset)
+||
+|------------|
+|[Array](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/array)|
+|[List](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/List.md)|
+| [Queue](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Queue/Readmd.md) |
+| [Map](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Map.md) |
+| [수학](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/Mathematics) |
+| [Comparator \| Comparable](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/comparator) |
+| [비트마스킹](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/bitmasking) |
+| [시뮬레이션](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/simulation) |
+| [DP](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/DP) |
+| [Regex](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/regex) |
+| [문자열 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stringSearching) |
+| [조합론(순열, 조합, 부분집합)](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics) |
+| [부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics/subset) |
+
 
 <br>
 
