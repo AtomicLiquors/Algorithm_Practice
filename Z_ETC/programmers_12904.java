@@ -1,3 +1,5 @@
+package Z_ETC;
+
 class programmers_12904
 {
     public int solution(String s)

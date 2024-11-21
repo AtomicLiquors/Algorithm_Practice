@@ -1,4 +1,4 @@
-// 프로세스
+package Z_ETC;// 프로세스
 import java.util.*;
 
 class Node42587 {

@@ -1,3 +1,5 @@
+package Z_ETC;
+
 public class Main_2393 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
