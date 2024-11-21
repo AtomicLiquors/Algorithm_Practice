@@ -81,3 +81,15 @@
 
 ### 깡 반복문 문제
   - [1](https://school.programmers.co.kr/learn/courses/30/lessons/340198)
+
+<br>
+
+### 커밋 컨벤션 (from '24.11.21)
+| Rendered   | Code   | Content  |
+|------------|------------|------------|
+| 🚀 | rocket | SOLVED |
+| 🔥 | fire | FAILED |
+| 🚧 | construction  | 패키지 구조 정리 및 기타 유지보수 |
+| 📝 | memo | 문서 업데이트 |
+
+ 
