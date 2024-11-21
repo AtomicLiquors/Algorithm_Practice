@@ -5,13 +5,15 @@
 <br>
 
 ### 코드
-[유사 코드](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetPseudo.md)
-[부분집합 기본](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetStandard.java)
-[N개 중 최대 M개까지](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetLimited.java)
+[유사 코드](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetPseudo.md)  
+[부분집합 기본](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetStandard.java)  
+[N개 중 최대 M개까지](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/SubsetLimited.java)  
+[부분집합의 합](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/subset_sum.md)
+[바이너리 카운팅 : 비트 연산으로 부분집합 생성하기](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/examples/BinaryCounting.md)
 
 <br>
 
-### 문제해결
+### Troubleshooting
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/combinatorics/subset/Troubleshooting.md)
 
 <br>
