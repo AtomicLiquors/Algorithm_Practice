@@ -50,6 +50,7 @@
 - [Regex](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/regex)
 - [문자열 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stringSearching)
 - [순열, 조합, 부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics)
+  - [부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics/subset)
 
 <br>
 
