@@ -1,6 +1,8 @@
+package combinatorics.permutation.examples;
+
 import java.util.Arrays;
 
-public class PermutationRecurTest {
+public class Permutation {
 	
 	private static int[] numbers;
 	private static boolean[] isSelected;

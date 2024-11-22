@@ -1,4 +1,6 @@
-public class PermutationBasicTest {
+package combinatorics.permutation.examples;
+
+public class PermutationIteration {
 
 	public static void main(String[] args) {
 

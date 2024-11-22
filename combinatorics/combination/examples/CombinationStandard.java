@@ -1,4 +1,8 @@
-public class Main{
+package combinatorics.combination.examples;
+
+import java.util.Arrays;
+
+public class CombinationStandard {
 
     static int N = 4;
     static int R = 3;
