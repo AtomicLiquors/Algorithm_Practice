@@ -15,3 +15,8 @@
 ```java
 int length = (int)Math.log10(n) + 1
 ```
+
+<br>
+
+### 내림, 올림 기호
+⌊ ⌋가 내림, ⌈ ⌉가 올림
