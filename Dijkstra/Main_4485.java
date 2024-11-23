@@ -14,8 +14,6 @@ public class Main_4485 {
         int P = 0;
         int[][] map;
         int[][] distances;
-        int[] dR = {-1, 1, 0, 0};
-        int[] dC = {0, 0, -1, 1};
         final int INF = Integer.MAX_VALUE;
 
         while(N != 0){
