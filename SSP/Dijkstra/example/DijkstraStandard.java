@@ -1,4 +1,4 @@
-package Dijkstra.example;
+package SSP.Dijkstra.example;
 
 import java.io.BufferedReader;
 import java.io.IOException;
