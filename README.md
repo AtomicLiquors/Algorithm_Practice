@@ -53,6 +53,7 @@
 | [문자열 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stringSearching) |
 | [조합론(순열, 조합, 부분집합)](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics) |
 | [부분집합](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/combinatorics/subset) |
+| [최소 신장 트리 : 모든 정점 연결](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/SpanningTree) |
 | [최단 경로 알고리즘](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/SSP) |
 
 
