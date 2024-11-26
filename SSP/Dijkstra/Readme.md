@@ -69,3 +69,8 @@
 
 ### PQ를 사용한 다익스트라
 $O(V^2)$를 $O(ElogV)$로 개선할 수 있다.
+
+<br>
+
+### 특정 정점을 경유하는 다익스트라
+[백준 1504](https://steady-coding.tistory.com/82)
