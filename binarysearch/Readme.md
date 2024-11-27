@@ -77,7 +77,7 @@ mid 계산, left, right값의 update 시 줄어들지 않는 경우가 있는지
 
 
 ## left = mid 는 사용하면 안 된다.
-
+https://blossoming-man.tistory.com/entry/%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-Binary-Search-%EA%B2%BD%EA%B3%84-%EC%84%A4%EC%A0%95%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94%EA%B0%80
 조건에 따라 될 수도 있겠지만 위 조건에서 left = mid를 사용하면 left, right 사이에 두 원소만 남았을 때 left가 움직이지 못 하므로 무한루프에 빠진다.  
 
 mid 계산 시 정수로 내림하기 때문에 주의해야 할 점이다.
