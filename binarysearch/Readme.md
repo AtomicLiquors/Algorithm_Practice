@@ -31,6 +31,9 @@ key = -key - 2;
 ### TroubleShooting
 [[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
 [[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)  
+- 이분 탐색의 종료 시점에
+    - ```lo``` != ```hi``` 인가(```lo + 1 = hi```)?
+    - 조건 충족 여부를 판별하는 함수 ```check(x)```에 대해 ```check(lo) != check(hi)```인가?
 [[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)  
 구현 실수 - ```arr[mid]```가 아니라 ```mid```를 비교한 경우  
 [[무한 루프가 일어나는 이유(유튜브)]](https://www.youtube.com/watch?v=b9SKfz58Jdo)
