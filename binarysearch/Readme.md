@@ -34,6 +34,8 @@ key = -key - 2;
 - 이분 탐색의 종료 시점에
     - ```lo``` != ```hi``` 인가(```lo + 1 = hi```)?
     - 조건 충족 여부를 판별하는 함수 ```check(x)```에 대해 ```check(lo) != check(hi)```인가?
+정답이 1씩 틀린다면
+- 정답이 가장 큰 False라면 lo를, 가장 작은 True라면 hi를 출력해주면 됩니다.
 [[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)  
 구현 실수 - ```arr[mid]```가 아니라 ```mid```를 비교한 경우  
 [[무한 루프가 일어나는 이유(유튜브)]](https://www.youtube.com/watch?v=b9SKfz58Jdo)
