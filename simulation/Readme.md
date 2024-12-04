@@ -7,3 +7,9 @@
 
 ### 외곽선 탐색 시 주의사항
 ![BFS OUTLINE](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/BFS_OUTLINE.PNG)
+
+<br>
+
+### 4차원 Boolean 배열
+[문제 링크](https://www.acmicpc.net/problem/13460)  
+[풀이 링크](https://minhamina.tistory.com/191)  
