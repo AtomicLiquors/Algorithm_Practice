@@ -3,13 +3,28 @@ package SSP;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
+
+class AdjNode {
+
+    int to;
+    int weight;
+
+    public AdjNode(int to, int weight){
+        this.to = to;
+        this.weight = weight;
+    }
+
+}
 
 public class Main_1753 {
 
     static int V, E;
-    static int[][] adjMatrix;
+    static ArrayList<AdjNode>[] adjList;
+    static int[] dist;
+    static boolean[] visited;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +33,10 @@ public class Main_1753 {
         V = Integer.parseInt(st.nextToken());
         E = Integer.parseInt(st.nextToken());
 
-        adjMatrix = new int[V+1][V+1];
+        adjList = new ArrayList[V+1];
+        for (int i = 1; i <= V; i++) {
+            adjList[i] = new ArrayList<>();
+        }
         int start = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < E; i++) {
@@ -26,8 +44,11 @@ public class Main_1753 {
             int from = Integer.parseInt(st.nextToken());
             int to = Integer.parseInt(st.nextToken());
             int weight = Integer.parseInt(st.nextToken());
-            adjMatrix[from][to] = weight;
+            adjList[from].add(new AdjNode(to, weight));
         }
+
+        dist = new int[V+1];
+        visited = new boolean[V+1];
 
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= V; i++) {
@@ -39,8 +60,9 @@ public class Main_1753 {
 
     static int dijkstra(int start, int end){
 
-        int[] dist = new int[V+1];
-        boolean[] visited = new boolean[V+1];
+        Arrays.fill(dist, 0);
+        Arrays.fill(visited, false);
+
         int min, curr;
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[start] = 0;
@@ -62,9 +84,13 @@ public class Main_1753 {
             if(curr == end)
                 break;
 
-            for(int i = 1; i <= V; i++){
-                if(!visited[i] && adjMatrix[curr][i] != 0)
-                    dist[i] = Math.min(dist[i], min + adjMatrix[curr][i]);
+            for(int i = 0; i < adjList[curr].size(); i++){
+                AdjNode adjNode = adjList[curr].get(i);
+                int to = adjNode.to;
+                int weight = adjNode.weight;
+
+                if(!visited[to])
+                    dist[to] = Math.min(dist[to], min + weight);
             }
         }
 
