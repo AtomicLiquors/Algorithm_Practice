@@ -26,3 +26,8 @@ visited 배열을 사용하는 대신,
 
 ### 2가지 이상의 탐색 함수가 필요한 경우도 있다.
 [링크](https://velog.io/@christer10/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%EC%A4%80-14500-%ED%85%8C%ED%8A%B8%EB%A1%9C%EB%AF%B8%EB%85%B8)
+
+<br>
+
+### 2차원 배열에서 n가지 좌표 선택하기 : 몫과 나머지 이용
+[백준-연구소](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_14502.java)
