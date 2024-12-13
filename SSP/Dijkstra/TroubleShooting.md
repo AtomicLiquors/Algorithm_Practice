@@ -1,7 +1,7 @@
 ## Standard
 ### 정답이 틀렸습니다.
 - 중간에 visited 체크를 빼먹진 않았나요?
-- visited 체크의 위치는 pq에서 꺼낸 직후여야 합니다.
+- [visited 체크의 위치는 pq에서 꺼낸 직후여야 합니다.](https://www.acmicpc.net/status?from_mine=1&problem_id=1753&user_id=gyqls234)
 
 <br>
 
@@ -11,4 +11,4 @@
 <br>
 
 ### 시간 초과
-- 다시 한 번... visited 체크의 위치는 pq에서 꺼낸 직후여야 합니다.
+- 다시 한 번... [visited 체크의 위치는 pq에서 꺼낸 직후여야 합니다.](https://www.acmicpc.net/status?from_mine=1&problem_id=1753&user_id=gyqls234)
