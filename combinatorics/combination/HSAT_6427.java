@@ -3,7 +3,7 @@ package combinatorics.combination;
 import java.io.*;
 import java.util.*;
 
-public class HSAT_347684 {
+public class HSAT_6427 {
     // 메모리 초과, 틀렸습니다(N이 3보다 작아서 선택이 불가능한 경우)
     // 배열을 조합을 돌릴 때마다 정렬할 게 아니라, 전체 배열을 정렬해 놓고 조합을 돌렸어야.
     static int N, Q, cars[], counts[], selected[] = new int[3];
