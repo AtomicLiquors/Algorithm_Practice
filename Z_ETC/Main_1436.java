@@ -20,5 +20,7 @@ public class Main_1436 {
         }
 
         System.out.println(title);
+
+        // 최적화(100ms) : https://www.acmicpc.net/source/87172313
     }
 }
