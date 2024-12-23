@@ -20,3 +20,21 @@ int length = (int)Math.log10(n) + 1
 
 ### 내림, 올림 기호
 ⌊ ⌋가 내림, ⌈ ⌉가 올림
+
+
+### 정수를 부호에 따라 -1, 0, 1로 변환하기
+```java
+Integer.signum()
+```
+
+```java
+public static int getSign(int num) {
+        if (num > 0) {
+            return 1;
+        } else if (num < 0) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
+```
