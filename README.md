@@ -61,6 +61,12 @@
 
 <br>
 
+### PriorityQueue Comparator 정의하기
+```java
+PriorityQueue<int[]> pq = new PriorityQueue<>(
+    (a1, a2) -> a1[0] - a2[0]
+);
+```
 
 <br>
 
