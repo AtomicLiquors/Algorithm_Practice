@@ -26,3 +26,6 @@
         answer[i] = deque.poll();
     }
 ```
+
+
+[숨바꼭질 3 DQ 활용 풀이법](https://www.acmicpc.net/source/87689417)
