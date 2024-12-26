@@ -8,6 +8,8 @@ import java.util.StringTokenizer;
 
 public class Main_13549 {
     public static void main(String[] args) throws IOException {
+        // 더 빠른 풀이법 : https://www.acmicpc.net/source/86638037
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
