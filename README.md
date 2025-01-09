@@ -112,6 +112,26 @@ PriorityQueue<int[]> pq = new PriorityQueue<>(
 
 <br>
 
-
-코테 문제 중에선 완탐으로 풀리는 문제를 그리디나, 다른 방법으로 풀리는 것 처럼 눈속임하는 문제가 정말 많다.   
+코테 문제 중에선 완탐으로 풀리는 문제를 그리디나, 다른 방법으로 풀리는 것 처럼 **눈속임하는 문제가 정말 많다.**   
 이번 네이버 4번도 그러한 문제였는데, 바로 완탐부터 의심했으면 정말 쉽게 풀렸을 문제였다.  
+
+<br>
+
+### switch 범위 지정 : 10 단위로 
+```java
+switch( (int) score / 10 ) {
+  case 0 :
+      ...
+      break;
+  case 1 :
+      ...
+      break;
+  case 2 :
+      ...
+      break;
+}
+```
+
+### parseInt와 valueOf의 차이?
+**parseInt()는 기본 int를 반환,** 
+**valueOf()는 Integer 래퍼 객체를 반환**
