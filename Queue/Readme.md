@@ -26,6 +26,5 @@
         answer[i] = deque.poll();
     }
 ```
-
-
+[Queue가 특정 항목을 갖고 있는지는 .contains()로 찾아라.](https://loosie.tistory.com/416)
 [숨바꼭질 3 DQ 활용 풀이법](https://www.acmicpc.net/source/87689417)
