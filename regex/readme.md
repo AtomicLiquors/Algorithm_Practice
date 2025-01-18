@@ -4,6 +4,8 @@
 
 [정규 표현식 패턴에 대해서는 Pattern.md로.](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Pattern.md)
 
+<br>
+
 ### Regex를 사용하는 String 내장 메서드
 일치 여부 검증
 ```java
@@ -59,4 +61,4 @@ Matcher matcher = pattern.matcher(searchTarget);
     - [1](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_4659.java)
     - [2](https://school.programmers.co.kr/learn/courses/30/lessons/133499)
 - [대소문자 무시](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_5698.java)
-  
+- [꼭 정규식이 필요할까?](https://st-lab.tistory.com/68)
