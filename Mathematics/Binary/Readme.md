@@ -16,3 +16,9 @@ Integer.parseInt(String, 2);
 ```java
 Integer.toBinaryString(n).length;
 ```
+<br>
+
+이진수 비트 수 구하기
+```java
+int diffBits = Integer.bitCount(bit1 ^ bit2);
+```
