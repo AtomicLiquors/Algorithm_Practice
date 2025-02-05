@@ -22,3 +22,12 @@ Integer.toBinaryString(n).length;
 ```java
 int diffBits = Integer.bitCount(bit1 ^ bit2);
 ```
+
+<br>
+
+XOR(num)의 의미는? 
+```java
+Integer.bitCount(num) % 2;
+```
+등장 비트끼리 전부 XOR한 값을 구하는 것.  
+결과적으로 비트의 개수에 2를 나눈 나머지가 된다.
