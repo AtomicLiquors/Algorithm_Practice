@@ -29,13 +29,13 @@ key = -key - 2;
 <br>
 
 ### TroubleShooting
-[[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
-[[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)  
-[[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)  
-구현 실수 - ```arr[mid]```가 아니라 ```mid```를 비교한 경우  
-[[무한 루프가 일어나는 이유(유튜브)]](https://www.youtube.com/watch?v=b9SKfz58Jdo)
+- [[Main_2805]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Main_2805.java)  
+- [[탈출 조건 : left <= right vs left < right]](https://www.acmicpc.net/blog/view/109)  
+- [[상한, 하한 직접 구현시 정수 오버플로우]](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/binarysearch/Lower__UpperBound.md#-troubleshooting)  
+- 구현 실수 - ```arr[mid]```가 아니라 ```mid```를 비교한 경우  
+- [[무한 루프가 일어나는 이유(유튜브)]](https://www.youtube.com/watch?v=b9SKfz58Jdo)
 
-틀렸습니다  
+### 틀렸습니다  
 백준 1654
 ```javascript
 // X
@@ -70,7 +70,7 @@ while(top >= bottom){ // 등호 붙이고
 			
 	}
 ```
-while문이 무한루프를 돌고 있다면, loop을 한번 돌 때, 범위가 하나도 줄어들지 않는 경우가 있다는 것이다.  
+while문이 무한루프를 돌고 있다면, loop을 한번 돌 때, 범위가 하나도 줄어들지 않는 경우가 있다는 의미다.  
 mid 계산, left, right값의 update 시 줄어들지 않는 경우가 있는지를 한번 확인해보자. 
 
 <br>
