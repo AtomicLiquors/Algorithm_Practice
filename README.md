@@ -131,7 +131,13 @@ switch( (int) score / 10 ) {
       break;
 }
 ```
+<br>
 
 ### parseInt와 valueOf의 차이?
 **parseInt()는 기본 int를 반환,** 
 **valueOf()는 Integer 래퍼 객체를 반환**
+
+<br>
+ 
+### 다시 확인할 문제
+[누적합, 대각선, DP](https://www.acmicpc.net/problem/11066)
