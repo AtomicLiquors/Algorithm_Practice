@@ -6,6 +6,7 @@
 - [백준 8595](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/regex/Main_8595.java)
 - [[코너 케이스] 런타임 에러 : long만큼 긴 문자열을 int로 파싱](https://school.programmers.co.kr/learn/courses/30/lessons/147355?language=java)
 - [입력값은 정수 범위일지라도, 정답은 정수 범위를 초과할 수 있다](https://velog.io/@skyepodium/%EB%B0%B1%EC%A4%80-13458-%EC%8B%9C%ED%97%98-%EA%B0%90%EB%8F%85)
+- 모듈러 분배 법칙(추가바람)
 
 <br>
 
