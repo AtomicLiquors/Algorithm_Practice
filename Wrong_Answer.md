@@ -10,6 +10,31 @@
 
 <br>
 
+
+### 시작 인덱스 설정을 잘못 한 경우
+```java
+static boolean test(String input, int start, int end){
+        // end is exclusive
+
+        if(end - start <= 1)
+            return true;
+
+        int mid = (start + end) / 2;
+
+        // (x)
+        for (int i = 0; i < mid; i++) {
+            // ...
+        }
+
+        // (o)
+        for (int i = start; i < mid; i++) {
+            // ...
+        }
+
+```
+
+<br>
+
 #### 반복문 내부에서 반복자 값을 수정한 경우
 ```java
 // Before
