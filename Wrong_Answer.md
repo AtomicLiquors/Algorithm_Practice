@@ -35,7 +35,8 @@ static boolean test(String input, int start, int end){
 
 <br>
 
-#### 반복문 내부에서 반복자 값을 수정한 경우
+#### 바뀐 변수 값 재사용
+**1. 반복문 내부에서 반복자 값을 수정한 경우**
 ```java
 // Before
 class Solution {
@@ -84,6 +85,28 @@ class Solution {
         return answer;
     }
 }
+```
+
+<br>
+
+**2.행렬 곱셈**
+```java
+long na = multiplyRowAndColum(a, b, a, c);
+        long nb = multiplyRowAndColum(a, b, b, d);
+        long nc = multiplyRowAndColum(c, d, a, c);
+        long nd = multiplyRowAndColum(c, d, b, d);
+
+        if(N.mod(TWO).equals(BigInteger.ONE)){
+            na = multiplyRowAndColum(na, nb, 1, 1);
+            nb = multiplyRowAndColum(na, nb, 1, 0); // 직전 라인에서 바뀐 na값을 재사용하고 있다.
+            nc = multiplyRowAndColum(nc, nd, 1, 1);
+            nd = multiplyRowAndColum(nc, nd, 1, 0); // 여기도 마찬가지
+        }
+
+        return new long[][]{
+            {na, nb},
+            {nc, nd}
+        };
 ```
 
 <br>
