@@ -115,12 +115,12 @@ long na = multiplyRowAndColum(a, b, a, c);
 
 <br>
 
-#### 기타
-[백준 1009 분산처리](https://www.acmicpc.net/problem/1009)
+#### N이 0으로 주어졌을 때
+[백준 18110 solved.ac](https://www.acmicpc.net/problem/18110)
 
 <br>
 
 #### 기타
 [백준 1009 분산처리](https://www.acmicpc.net/problem/1009)  
 [백준 16976 배열 복원하기](https://www.acmicpc.net/problem/16967)  
-테스크 케이스 배열의 크기를 늘렸을 때 반례를 발견할 수 있었다.  
+테스트 케이스 배열의 크기를 늘렸을 때 반례를 발견할 수 있었다.  
