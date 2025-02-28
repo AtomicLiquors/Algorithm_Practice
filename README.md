@@ -34,6 +34,7 @@
 
 ### 틀렸습니다 : 히든 테스트 케이스에 걸렸을 때
 [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Wrong_Answer.md)
+
 <br>
 
 
@@ -113,7 +114,7 @@ PriorityQueue<int[]> pq = new PriorityQueue<>(
 <br>
 
 코테 문제 중에선 완탐으로 풀리는 문제를 그리디나, 다른 방법으로 풀리는 것 처럼 **눈속임하는 문제가 정말 많다.**   
-이번 네이버 4번도 그러한 문제였는데, 바로 완탐부터 의심했으면 정말 쉽게 풀렸을 문제였다.  
+네이버 기출 4번도 그러한 문제였는데, 바로 완탐부터 의심했으면 정말 쉽게 풀렸을 문제였다.  
 
 <br>
 
