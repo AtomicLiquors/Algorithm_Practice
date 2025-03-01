@@ -1,4 +1,4 @@
-package SSP;
+package SSP.Floyd;
 
 import java.io.BufferedReader;
 import java.io.IOException;
