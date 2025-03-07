@@ -25,7 +25,6 @@ public class 색종이붙이기_최효빈 {
 
                 if(isInputOne){
                     isTileOne[i][j] = true;
-                    // remainingOne++;
                 }
             }
         }
@@ -51,7 +50,6 @@ public class 색종이붙이기_최효빈 {
     }
 
     static boolean usePaper(int size, int number){
-        // int usage = size * size * number;
         boolean result = true;
 
 
@@ -73,7 +71,6 @@ public class 색종이붙이기_최효빈 {
             papers[size] -= number;
         }
 
-        // remainingOne -= usage;
         return result;
     }
 
