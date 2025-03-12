@@ -22,10 +22,7 @@ public class 색종이붙이기_최효빈 {
             StringTokenizer st = new StringTokenizer(br.readLine());
             for (int j = 0; j < SIZE; j++) {
                 boolean isInputOne = Integer.parseInt(st.nextToken()) == 1;
-
-                if(isInputOne){
-                    isTileOne[i][j] = true;
-                }
+                isTileOne[i][j] = isInputOne;
             }
         }
 
