@@ -135,8 +135,8 @@ switch( (int) score / 10 ) {
 <br>
 
 ### parseInt와 valueOf의 차이?
-**parseInt()는 기본 int를 반환,** 
-**valueOf()는 Integer 래퍼 객체를 반환**
+parseInt()는 기본 int를 반환,  
+valueOf()는 Integer 래퍼 객체를 반환
 
 <br>
  
