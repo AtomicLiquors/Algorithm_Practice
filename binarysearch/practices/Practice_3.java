@@ -1,4 +1,4 @@
-package binarysearch;
+package binarysearch.practices;
 
 public class Practice_3 {
     public static void main(String[] args) {
