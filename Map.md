@@ -48,3 +48,16 @@ After)
         //...
     }
   ```
+
+<br>
+
+### Map에 기본값을 넣고 선언하기
+여기에 해당하는 문법은 보통 Java 9이상에서 지원한다.  
+5버전부터 쓸 수 있는 방법도 있긴 한데 사실상 일일이 put하는 거랑 크게 차이가 없다.
+```java
+Map<String, Integer> map = new HashMap<>() {{
+            put("apple", 1);
+            put("banana", 2);
+            put("cherry", 3);
+        }};
+```
