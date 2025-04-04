@@ -19,24 +19,21 @@
 - [배열을 쓰지 않는 '제거'](https://western-sky.tistory.com/135)
   
 <br>
-  
-### 불가능한 경우
-- [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java)
-- [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250)
+
+### TroubleShooting
+
+| TroubleShooting |
+|-------|
+| **불가능한 경우** |
+| [BOJ 1173](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/simulation/Main_1173.java) |
+| [BOJ 1103 : 무한 루프](https://loosie.tistory.com/250) |
+| **시간 초과** |
+| 원소 갯수가 많다면 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라. |
+| [Stack을 활용한 탐색 속도 단축하기](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stack#stack%EC%9C%BC%EB%A1%9C-%ED%83%90%EC%83%89-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95%ED%95%98%EA%B8%B0) |
+| **틀렸습니다 : 히든 테스트 케이스에 걸렸을 때** |
+| [링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Wrong_Answer.md) |
 
 <br>
-
-### 시간 초과
-- 원소 갯수가 많다면 투 포인터 또는 [이분 탐색](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/binarysearch)을 의심해 봐라.
-- [Stack을 활용한 탐색 속도 단축하기](https://github.com/AtomicLiquors/Algorithm_Practice/tree/main/stack#stack%EC%9C%BC%EB%A1%9C-%ED%83%90%EC%83%89-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95%ED%95%98%EA%B8%B0)
-
-<br>
-
-### 틀렸습니다 : 히든 테스트 케이스에 걸렸을 때
-[링크](https://github.com/AtomicLiquors/Algorithm_Practice/blob/main/Wrong_Answer.md)
-
-<br>
-
 
 ### 목차
 ||
