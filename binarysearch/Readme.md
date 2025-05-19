@@ -88,7 +88,7 @@ mid 계산 시 정수로 내림하기 때문에 주의해야 할 점이다.
 
  
 
-### left = mid는 안 되는데 right = mid는 왜 되는가?
+#### left = mid는 안 되는데 right = mid는 왜 되는가?
 
 **mid 계산 특성 (정수 내림) 때문이다.**  
 두 원소만 남은 경우 mid는 left랑 같고 조건식을 만족하면 left가 right로 이동하고,   
@@ -97,9 +97,9 @@ left == right여서 반복문을 빠져나온다.
 
  
 
- 
+ <br>
 
-### while 조건에 equal 포함 형태
+#### while 조건에 equal 포함 형태
 ```
 left, right = 0, len(arr) - 1
 while left <= right:
@@ -114,9 +114,10 @@ return arr[left]
 
 right = mid를 사용할 경우 left == right, arr[mid] == target 일 때 반복문을 못 빠져나오는 경우가 생긴다. 그래서 while 조건에서 등호가 포함되어 있을 경우 right = mid - 1을 사용한다.  
 
+ <br>
  
 
-### right = mid -1 을 사용하면 [left, right] 사이에 답이 없는 경우가 생기는데 괜찮나?  
+#### right = mid -1 을 사용하면 [left, right] 사이에 답이 없는 경우가 생기는데 괜찮나?  
 간단하게 arr = [1, 3, 3, 5], target = 3 을 살펴보자.  
 첫 번째 루프에서 mid = index 1이 되고 arr[mid] == target이기 때문에 right = index 0이 된다.  
 left = right = index 0인 상태, 즉 arr[left : right+1] = [1]  
